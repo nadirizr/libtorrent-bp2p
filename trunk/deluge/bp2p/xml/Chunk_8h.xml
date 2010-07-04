@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="Chunk_8h" kind="file">
+    <compoundname>Chunk.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">string</includes>
+    <includes refid="BitVector_8h" local="no">common/BitVector.h</includes>
+    <includedby refid="FileObject_8h" local="yes">src/betterp2p/filesystem/FileObject.h</includedby>
+    <incdepgraph>
+      <node id="75">
+        <label>boost/serialization/vector.hpp</label>
+      </node>
+      <node id="73">
+        <label>boost/dynamic_bitset.hpp</label>
+      </node>
+      <node id="71">
+        <label>string</label>
+      </node>
+      <node id="74">
+        <label>boost/serialization/split_free.hpp</label>
+      </node>
+      <node id="72">
+        <label>common/BitVector.h</label>
+        <link refid="BitVector_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>stddef.h</label>
+      </node>
+      <node id="77">
+        <label>vector</label>
+      </node>
+      <node id="69">
+        <label>src/betterp2p/filesystem/Chunk.h</label>
+        <link refid="Chunk.h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>boost/serialization/serialization.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="80">
+        <label>src/betterp2p/control/FileHandler.h</label>
+        <link refid="FileHandler_8h"/>
+      </node>
+      <node id="79">
+        <label>src/betterp2p/filesystem/FileObject.h</label>
+        <link refid="FileObject_8h"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>src/betterp2p/algorithm/PartialAlgorithm.h</label>
+        <link refid="PartialAlgorithm_8h"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>src/betterp2p/filesystem/Chunk.h</label>
+        <link refid="Chunk.h"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classBT2_1_1Chunk" prot="public">BT2::Chunk</innerclass>
+    <innernamespace refid="namespaceBT2">BT2</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/Chunk.h"/>
+  </compounddef>
+</doxygen>

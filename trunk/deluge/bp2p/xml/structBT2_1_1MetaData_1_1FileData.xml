@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="structBT2_1_1MetaData_1_1FileData" kind="struct" prot="public">
+    <compoundname>BT2::MetaData::FileData</compoundname>
+    <includes refid="MetaData_8h" local="no">MetaData.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structBT2_1_1MetaData_1_1FileData_186c1de01b8f4ed2feaae21f70a2a5ef2" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string BT2::MetaData::MetaData::FileData::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="57" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBT2_1_1MetaData_1_1FileData_158e1be5ad7a32b561d886d9872f95e3c" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t BT2::MetaData::MetaData::FileData::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="58" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBT2_1_1MetaData_1_1FileData_1cec372d6d0fd4102f634ba2a26b470f1" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t BT2::MetaData::MetaData::FileData::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="59" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBT2_1_1MetaData_1_1FileData_19f4d8e56e814479a8bc9459da04a5348" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t BT2::MetaData::MetaData::FileData::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="60" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structBT2_1_1MetaData_1_1FileData_13cae53935ba141c9a885578c47fe16fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BT2::MetaData::MetaData::FileData::FileData</definition>
+        <argsstring>(const std::string &amp;_path=&quot;&quot;, size_t _offset=0, size_t _size=0, size_t _index=0)</argsstring>
+        <name>FileData</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_path</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_size</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="55" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="54" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains the data for a single file contained in this torrent. </para>    </detaileddescription>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="53" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="53" bodyend="61"/>
+    <listofallmembers>
+      <member refid="structBT2_1_1MetaData_1_1FileData_13cae53935ba141c9a885578c47fe16fd" prot="public" virt="non-virtual"><scope>BT2::MetaData::FileData</scope><name>FileData</name></member>
+      <member refid="structBT2_1_1MetaData_1_1FileData_19f4d8e56e814479a8bc9459da04a5348" prot="public" virt="non-virtual"><scope>BT2::MetaData::FileData</scope><name>index</name></member>
+      <member refid="structBT2_1_1MetaData_1_1FileData_158e1be5ad7a32b561d886d9872f95e3c" prot="public" virt="non-virtual"><scope>BT2::MetaData::FileData</scope><name>offset</name></member>
+      <member refid="structBT2_1_1MetaData_1_1FileData_186c1de01b8f4ed2feaae21f70a2a5ef2" prot="public" virt="non-virtual"><scope>BT2::MetaData::FileData</scope><name>path</name></member>
+      <member refid="structBT2_1_1MetaData_1_1FileData_1cec372d6d0fd4102f634ba2a26b470f1" prot="public" virt="non-virtual"><scope>BT2::MetaData::FileData</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+setup.py
+Blocklist.egg-info/PKG-INFO
+Blocklist.egg-info/SOURCES.txt
+Blocklist.egg-info/dependency_links.txt
+Blocklist.egg-info/entry_points.txt
+Blocklist.egg-info/top_level.txt
+blocklist/__init__.py
+blocklist/core.py
+blocklist/gtkui.py
+blocklist/peerguardian.py
+blocklist/text.py
+blocklist/ui.py
+blocklist/webui.py

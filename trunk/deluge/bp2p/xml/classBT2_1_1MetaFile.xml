@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="classBT2_1_1MetaFile" kind="class" prot="public">
+    <compoundname>BT2::MetaFile</compoundname>
+    <includes refid="MetaFile_8h" local="no">MetaFile.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBT2_1_1MetaFile_1049c448b5397e9ac0abbc314360e6090" prot="private" static="no" mutable="no">
+        <type><ref refid="structBT2_1_1MetaData" kindref="compound">MetaData</ref> *</type>
+        <definition>MetaData* BT2::MetaFile::m_metadata</definition>
+        <argsstring></argsstring>
+        <name>m_metadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="104" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBT2_1_1MetaFile_1c6c1789e064ee3090c49fc4919a60094" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BT2::MetaFile::m_initialized</definition>
+        <argsstring></argsstring>
+        <name>m_initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="105" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBT2_1_1MetaFile_10de05b129abda6926a39b2474863dbcf" prot="private" static="no" mutable="yes">
+        <type>boost::filesystem::fstream</type>
+        <definition>boost::filesystem::fstream BT2::MetaFile::m_metafile</definition>
+        <argsstring></argsstring>
+        <name>m_metafile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metafile stream </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="110" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classBT2_1_1MetaFile_16a980179310b8d11da5a57f3dfaab221" prot="private" static="yes" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string BT2::MetaFile::METAFILE_SUFFIX</definition>
+        <argsstring></argsstring>
+        <name>METAFILE_SUFFIX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Suffix appended to metafile names </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="116" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBT2_1_1MetaFile_12f2a94931309e0300bb57f60d1e776cd" prot="private" static="yes" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string BT2::MetaFile::METAFILE_DIRECTORY</definition>
+        <argsstring></argsstring>
+        <name>METAFILE_DIRECTORY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The path in which to put our metafiles. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="121" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBT2_1_1MetaFile_17e2e8115681646a0ec82718c09a50d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BT2::MetaFile::MetaFile</definition>
+        <argsstring>(const std::string &amp;baseFileName)</argsstring>
+        <name>MetaFile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>baseFileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="classBT2_1_1MetaFile" kindref="compound">MetaFile</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>baseFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file that the metafile belongs to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1MetaFile_147e879177b4168b32468d3f457662a20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BT2::MetaFile::MetaFile</definition>
+        <argsstring>(const std::string &amp;baseFileName, const std::string &amp;diskFileName)</argsstring>
+        <name>MetaFile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>baseFileName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>diskFileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="classBT2_1_1MetaFile" kindref="compound">MetaFile</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>baseFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>real file name of the file (if baseFileName is not equal) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>diskFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file on disk that the metafile belongs to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1MetaFile_1ad79cf08bae8109c317b5f9aa347150f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BT2::MetaFile::MetaFile</definition>
+        <argsstring>(MetaData *metadata)</argsstring>
+        <name>MetaFile</name>
+        <param>
+          <type><ref refid="structBT2_1_1MetaData" kindref="compound">MetaData</ref> *</type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="classBT2_1_1MetaFile" kindref="compound">MetaFile</ref> from the given <ref refid="structBT2_1_1MetaData" kindref="compound">MetaData</ref>, creating the file as needed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1MetaFile_18ce6affe7b3af94502604cbc972a0f9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BT2::MetaFile::~MetaFile</definition>
+        <argsstring>()</argsstring>
+        <name>~MetaFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dtor, saves self to file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1MetaFile_10d9276f070ec8dba3e13055ca9b8e349" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BT2::MetaFile::isInitialized</definition>
+        <argsstring>() const </argsstring>
+        <name>isInitialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the metadata was loaded from a file or otherwise initialized </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1MetaFile_129080fed37b06245b76cf0722006c24a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structBT2_1_1MetaData" kindref="compound">MetaData</ref> &amp;</type>
+        <definition>MetaData&amp; BT2::MetaFile::getMetaData</definition>
+        <argsstring>()</argsstring>
+        <name>getMetaData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the metadata </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1MetaFile_1b5ae6d57ed0aebdde9464442e11560e6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structBT2_1_1MetaData" kindref="compound">MetaData</ref> &amp;</type>
+        <definition>const MetaData&amp; BT2::MetaFile::getMetaData</definition>
+        <argsstring>() const </argsstring>
+        <name>getMetaData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the metadata, const version </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1MetaFile_14c040d0af7a473103ff92a146a91d9b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string BT2::MetaFile::getFileName</definition>
+        <argsstring>() const </argsstring>
+        <name>getFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the metafile path. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1MetaFile_14b8a0921a5331fdfd3e52f2f4991d4d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::MetaFile::persist</definition>
+        <argsstring>()</argsstring>
+        <name>persist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Saves all data to file (and makes a copy of old file, for percistancy) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="69"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classBT2_1_1MetaFile_16a8ce76c08cfe583522af715d3d21d32" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool BT2::MetaFile::checkMetaFileExists</definition>
+        <argsstring>(const std::string &amp;baseFileName)</argsstring>
+        <name>checkMetaFileExists</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>baseFileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static function checks if a meta-file exists for the given file name.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>baseFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target filename to check if a meta-file exists for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if a meta-file exists </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1MetaFile_1c25eea715405c3f8748abf60bcac9f6f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string BT2::MetaFile::getMetaFilePathForFile</definition>
+        <argsstring>(const std::string &amp;baseFileName)</argsstring>
+        <name>getMetaFilePathForFile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>baseFileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static function returns the full path of the meta file corresponding to the given file name.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>diskFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target filename to get the meta-file for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the meta-file path corresponding to the given file name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="86"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classBT2_1_1MetaFile_116e7fbf64988b1b5293ed45e258c9636" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::MetaFile::initialize</definition>
+        <argsstring>(const std::string &amp;baseFileName, const std::string &amp;diskFileName)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>baseFileName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>diskFileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the metafile </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1MetaFile_1190072fd8d04ee18a01a8f168c515d7c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::MetaFile::performLoad</definition>
+        <argsstring>()</argsstring>
+        <name>performLoad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Loads the metadata from file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1MetaFile_143ee5aa630e5db08723fadd0bc589897" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::MetaFile::performSave</definition>
+        <argsstring>()</argsstring>
+        <name>performSave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Saves the metadata to file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classBT2_1_1MetaFile" kindref="compound">MetaFile</ref> contains meta-data about the actual file The metadata includes target file size, chunk size, chunk lists, and anything else we wish to make available</para><para>For now, it&apos;s just the above three </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="23">
+        <label>BT2::MetaFile</label>
+        <link refid="classBT2_1_1MetaFile"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>m_metadata</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>BT2::MetaData</label>
+        <link refid="structBT2_1_1MetaData"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>EMPTY_FUNCTIONAL</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>BT2::BitVector</label>
+        <link refid="classBT2_1_1BitVector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" line="20" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/MetaFile.h" bodystart="20" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classBT2_1_1MetaFile_16a8ce76c08cfe583522af715d3d21d32" prot="public" virt="non-virtual"><scope>BT2::MetaFile</scope><name>checkMetaFileExists</name></member>
+      <member refid="classBT2_1_1MetaFile_14c040d0af7a473103ff92a146a91d9b6" prot="public" virt="non-virtual"><scope>BT2::MetaFile</scope><name>getFileName</name></member>
+      <member refid="classBT2_1_1MetaFile_129080fed37b06245b76cf0722006c24a" prot="public" virt="non-virtual"><scope>BT2::MetaFile</scope><name>getMetaData</name></member>
+      <member refid="classBT2_1_1MetaFile_1b5ae6d57ed0aebdde9464442e11560e6" prot="public" virt="non-virtual"><scope>BT2::MetaFile</scope><name>getMetaData</name></member>
+      <member refid="classBT2_1_1MetaFile_1c25eea715405c3f8748abf60bcac9f6f" prot="public" virt="non-virtual"><scope>BT2::MetaFile</scope><name>getMetaFilePathForFile</name></member>
+      <member refid="classBT2_1_1MetaFile_116e7fbf64988b1b5293ed45e258c9636" prot="private" virt="non-virtual"><scope>BT2::MetaFile</scope><name>initialize</name></member>
+      <member refid="classBT2_1_1MetaFile_10d9276f070ec8dba3e13055ca9b8e349" prot="public" virt="non-virtual"><scope>BT2::MetaFile</scope><name>isInitialized</name></member>
+      <member refid="classBT2_1_1MetaFile_1c6c1789e064ee3090c49fc4919a60094" prot="private" virt="non-virtual"><scope>BT2::MetaFile</scope><name>m_initialized</name></member>
+      <member refid="classBT2_1_1MetaFile_1049c448b5397e9ac0abbc314360e6090" prot="private" virt="non-virtual"><scope>BT2::MetaFile</scope><name>m_metadata</name></member>
+      <member refid="classBT2_1_1MetaFile_10de05b129abda6926a39b2474863dbcf" prot="private" virt="non-virtual"><scope>BT2::MetaFile</scope><name>m_metafile</name></member>
+      <member refid="classBT2_1_1MetaFile_17e2e8115681646a0ec82718c09a50d73" prot="public" virt="non-virtual"><scope>BT2::MetaFile</scope><name>MetaFile</name></member>
+      <member refid="classBT2_1_1MetaFile_147e879177b4168b32468d3f457662a20" prot="public" virt="non-virtual"><scope>BT2::MetaFile</scope><name>MetaFile</name></member>
+      <member refid="classBT2_1_1MetaFile_1ad79cf08bae8109c317b5f9aa347150f" prot="public" virt="non-virtual"><scope>BT2::MetaFile</scope><name>MetaFile</name></member>
+      <member refid="classBT2_1_1MetaFile_12f2a94931309e0300bb57f60d1e776cd" prot="private" virt="non-virtual"><scope>BT2::MetaFile</scope><name>METAFILE_DIRECTORY</name></member>
+      <member refid="classBT2_1_1MetaFile_16a980179310b8d11da5a57f3dfaab221" prot="private" virt="non-virtual"><scope>BT2::MetaFile</scope><name>METAFILE_SUFFIX</name></member>
+      <member refid="classBT2_1_1MetaFile_1190072fd8d04ee18a01a8f168c515d7c" prot="private" virt="non-virtual"><scope>BT2::MetaFile</scope><name>performLoad</name></member>
+      <member refid="classBT2_1_1MetaFile_143ee5aa630e5db08723fadd0bc589897" prot="private" virt="non-virtual"><scope>BT2::MetaFile</scope><name>performSave</name></member>
+      <member refid="classBT2_1_1MetaFile_14b8a0921a5331fdfd3e52f2f4991d4d3" prot="public" virt="non-virtual"><scope>BT2::MetaFile</scope><name>persist</name></member>
+      <member refid="classBT2_1_1MetaFile_18ce6affe7b3af94502604cbc972a0f9d" prot="public" virt="non-virtual"><scope>BT2::MetaFile</scope><name>~MetaFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

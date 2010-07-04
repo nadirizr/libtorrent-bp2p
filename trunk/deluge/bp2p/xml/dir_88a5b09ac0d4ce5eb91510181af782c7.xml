@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="dir_88a5b09ac0d4ce5eb91510181af782c7" kind="dir">
+    <compoundname>src/</compoundname>
+    <innerdir refid="dir_f567a271a729f05c17f0e1c8203f5721">src/betterp2p/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nadir/Work/bp2p/current/src/"/>
+  </compounddef>
+</doxygen>

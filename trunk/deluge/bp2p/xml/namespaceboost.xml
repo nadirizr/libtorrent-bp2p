@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="namespaceboost" kind="namespace">
+    <compoundname>boost</compoundname>
+    <innernamespace refid="namespaceboost_1_1serialization">boost::serialization</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceboost_1f208259cc0458fe578f0e172662c6247" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; boost::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const BT2::BitVector &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classBT2_1_1BitVector" kindref="compound">BT2::BitVector</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>.robin</title><para>unavailable </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/BitVector.h" line="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="204"/>
+  </compounddef>
+</doxygen>

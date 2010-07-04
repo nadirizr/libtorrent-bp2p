@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "log4cpp", "log4cpp\log4cpp.vcproj", "{C8DBEA36-E2B5-4AF4-B0C7-0A2A1814F774}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "log4cppDLL", "log4cppDLL\log4cppDLL.vcproj", "{A0F56AA6-448B-48CC-BE9D-C45B8552C929}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "log4cppLib", "log4cppLib\log4cppLib.vcproj", "{3FDDC3EA-93D9-46D4-97F8-05DF9D14E5EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8DBEA36-E2B5-4AF4-B0C7-0A2A1814F774}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C8DBEA36-E2B5-4AF4-B0C7-0A2A1814F774}.Debug|Win32.Build.0 = Debug|Win32
+		{C8DBEA36-E2B5-4AF4-B0C7-0A2A1814F774}.Release|Win32.ActiveCfg = Release|Win32
+		{C8DBEA36-E2B5-4AF4-B0C7-0A2A1814F774}.Release|Win32.Build.0 = Release|Win32
+		{A0F56AA6-448B-48CC-BE9D-C45B8552C929}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A0F56AA6-448B-48CC-BE9D-C45B8552C929}.Debug|Win32.Build.0 = Debug|Win32
+		{A0F56AA6-448B-48CC-BE9D-C45B8552C929}.Release|Win32.ActiveCfg = Release|Win32
+		{A0F56AA6-448B-48CC-BE9D-C45B8552C929}.Release|Win32.Build.0 = Release|Win32
+		{3FDDC3EA-93D9-46D4-97F8-05DF9D14E5EB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3FDDC3EA-93D9-46D4-97F8-05DF9D14E5EB}.Debug|Win32.Build.0 = Debug|Win32
+		{3FDDC3EA-93D9-46D4-97F8-05DF9D14E5EB}.Release|Win32.ActiveCfg = Release|Win32
+		{3FDDC3EA-93D9-46D4-97F8-05DF9D14E5EB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

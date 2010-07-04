@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: Blocklist
+Version: 1.0
+Summary: Download and import IP blocklists
+Home-page: http://deluge-torrent.org
+Author: Andrew Resch
+Author-email: andrew.resch@gmail.com
+License: GPLv3
+Description: Download and import IP blocklists
+Platform: UNKNOWN

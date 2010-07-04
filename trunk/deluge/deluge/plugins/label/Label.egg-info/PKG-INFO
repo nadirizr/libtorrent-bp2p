@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: Label
+Version: 0.1
+Summary: Label plugin.
+Home-page: http://deluge-torrent.org
+Author: Martijn Voncken
+Author-email: mvoncken@gmail.com
+License: GPLv3
+Description: 
+        Label plugin.
+        
+        Offers filters on state,tracker and keyword.
+        adds a tracker column.
+        
+        future: Real labels.
+        
+        
+Platform: UNKNOWN
