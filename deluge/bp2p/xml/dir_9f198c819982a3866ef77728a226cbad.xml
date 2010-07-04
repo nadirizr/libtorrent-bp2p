@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="dir_9f198c819982a3866ef77728a226cbad" kind="dir">
+    <compoundname>src/betterp2p/control/</compoundname>
+    <innerfile refid="FileHandler_8h">FileHandler.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/"/>
+  </compounddef>
+</doxygen>

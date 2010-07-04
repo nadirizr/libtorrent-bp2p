@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="namespaceBT2" kind="namespace">
+    <compoundname>BT2</compoundname>
+    <innerclass refid="classBT2_1_1FileHandler" prot="public">BT2::FileHandler</innerclass>
+    <innerclass refid="structBT2_1_1MetaData" prot="public">BT2::MetaData</innerclass>
+    <innerclass refid="classBT2_1_1BitVector" prot="public">BT2::BitVector</innerclass>
+    <innerclass refid="classBT2_1_1FileObject" prot="public">BT2::FileObject</innerclass>
+    <innerclass refid="classBT2_1_1Chunk" prot="public">BT2::Chunk</innerclass>
+    <innerclass refid="classBT2_1_1MetaFile" prot="public">BT2::MetaFile</innerclass>
+    <innerclass refid="classBT2_1_1PartialAlgorithm" prot="public">BT2::PartialAlgorithm</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceBT2_1ec25942d9d92338be4fb202ca194a966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref></type>
+        <definition>BitVector BT2::bitvector_from_string</definition>
+        <argsstring>(const std::string &amp;data, size_t bitlen=0)</argsstring>
+        <name>bitvector_from_string</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bitlen</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/BitVector.h" line="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceBT2_19fd2fcf7e644c2139520255384484efe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string BT2::bitvector_to_string</definition>
+        <argsstring>(const BitVector &amp;bits)</argsstring>
+        <name>bitvector_to_string</name>
+        <param>
+          <type>const <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>bits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/BitVector.h" line="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" line="12"/>
+  </compounddef>
+</doxygen>

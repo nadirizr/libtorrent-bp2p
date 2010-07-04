@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="classBT2_1_1BitVector" kind="class" prot="public">
+    <compoundname>BT2::BitVector</compoundname>
+    <includes refid="BitVector_8h" local="no">BitVector.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/BitVector.h" line="20" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/BitVector.h" bodystart="19" bodyend="21"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

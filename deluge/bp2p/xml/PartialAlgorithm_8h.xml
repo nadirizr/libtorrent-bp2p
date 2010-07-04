@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="PartialAlgorithm_8h" kind="file">
+    <compoundname>PartialAlgorithm.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">vector</includes>
+    <includes refid="BitVector_8h" local="no">common/BitVector.h</includes>
+    <includes refid="FileObject_8h" local="no">filesystem/FileObject.h</includes>
+    <includedby refid="FileHandler_8h" local="yes">src/betterp2p/control/FileHandler.h</includedby>
+    <incdepgraph>
+      <node id="17">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="6">
+        <label>boost/serialization/vector.hpp</label>
+      </node>
+      <node id="8">
+        <label>filesystem/FileObject.h</label>
+        <link refid="FileObject_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>boost/dynamic_bitset.hpp</label>
+      </node>
+      <node id="16">
+        <label>boost/filesystem/fstream.hpp</label>
+      </node>
+      <node id="12">
+        <label>common/MetaData.h</label>
+        <link refid="MetaData_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>boost/serialization/split_free.hpp</label>
+      </node>
+      <node id="3">
+        <label>common/BitVector.h</label>
+        <link refid="BitVector_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>stddef.h</label>
+      </node>
+      <node id="13">
+        <label>boost/serialization/base_object.hpp</label>
+      </node>
+      <node id="14">
+        <label>boost/serialization/string.hpp</label>
+      </node>
+      <node id="0">
+        <label>src/betterp2p/algorithm/PartialAlgorithm.h</label>
+        <link refid="PartialAlgorithm.h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>MetaFile.h</label>
+        <link refid="MetaFile_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="9">
+        <label>Chunk.h</label>
+        <link refid="Chunk_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>boost/serialization/serialization.hpp</label>
+      </node>
+      <node id="15">
+        <label>boost/serialization/split_member.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="19">
+        <label>src/betterp2p/control/FileHandler.h</label>
+        <link refid="FileHandler_8h"/>
+      </node>
+      <node id="18">
+        <label>src/betterp2p/algorithm/PartialAlgorithm.h</label>
+        <link refid="PartialAlgorithm.h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classBT2_1_1PartialAlgorithm" prot="public">BT2::PartialAlgorithm</innerclass>
+    <innernamespace refid="namespaceBT2">BT2</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h"/>
+  </compounddef>
+</doxygen>

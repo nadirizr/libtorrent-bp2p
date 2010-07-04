@@ -1,0 +1,5 @@
+
+        [console_scripts]
+            deluge = deluge.main:start_ui
+            deluged = deluge.main:start_daemon
+    

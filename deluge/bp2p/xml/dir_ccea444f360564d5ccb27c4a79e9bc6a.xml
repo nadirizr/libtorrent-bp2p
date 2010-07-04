@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="dir_ccea444f360564d5ccb27c4a79e9bc6a" kind="dir">
+    <compoundname>src/betterp2p/algorithm/</compoundname>
+    <innerfile refid="PartialAlgorithm_8h">PartialAlgorithm.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/"/>
+  </compounddef>
+</doxygen>

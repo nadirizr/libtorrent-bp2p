@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="namespaceboost_1_1serialization" kind="namespace">
+    <compoundname>boost::serialization</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceboost_1_1serialization_166b9c2644e3181f2d2065d985eb792d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::serialization::save</definition>
+        <argsstring>(Archive &amp;ar, const BT2::MetaData::FileData &amp;fd, const unsigned int version)</argsstring>
+        <name>save</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structBT2_1_1MetaData_1_1FileData" kindref="compound">BT2::MetaData::FileData</ref> &amp;</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="208" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="208" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1serialization_1db2d23219390759d559d9eeab3bc9100" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::serialization::load</definition>
+        <argsstring>(Archive &amp;ar, BT2::MetaData::FileData &amp;fd, const unsigned int version)</argsstring>
+        <name>load</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type><ref refid="structBT2_1_1MetaData_1_1FileData" kindref="compound">BT2::MetaData::FileData</ref> &amp;</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="216" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="216" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1serialization_151dae346a1b15a777f49f365fe93c065" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::serialization::serialize</definition>
+        <argsstring>(Archive &amp;ar, BT2::MetaData::FileData &amp;t, const unsigned int file_version)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type><ref refid="structBT2_1_1MetaData_1_1FileData" kindref="compound">BT2::MetaData::FileData</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>file_version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="225" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="225" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1serialization_1311c699f0e0348991ee36978f7070264" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::serialization::save</definition>
+        <argsstring>(Archive &amp;ar, const BT2::BitVector &amp;bv, const unsigned int version)</argsstring>
+        <name>save</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classBT2_1_1BitVector" kindref="compound">BT2::BitVector</ref> &amp;</type>
+          <declname>bv</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/BitVector.h" line="42" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/BitVector.h" bodystart="42" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1serialization_12c8520eb09f488e8d87401bdec9b778e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::serialization::load</definition>
+        <argsstring>(Archive &amp;ar, BT2::BitVector &amp;bv, const unsigned int version)</argsstring>
+        <name>load</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type><ref refid="classBT2_1_1BitVector" kindref="compound">BT2::BitVector</ref> &amp;</type>
+          <declname>bv</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/BitVector.h" line="57" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/BitVector.h" bodystart="57" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1serialization_14d6f3b604885b5ee3fecbdeb526eeac4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void boost::serialization::serialize</definition>
+        <argsstring>(Archive &amp;ar, BT2::BitVector &amp;t, const unsigned int file_version)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type><ref refid="classBT2_1_1BitVector" kindref="compound">BT2::BitVector</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>file_version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/BitVector.h" line="78" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/BitVector.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="205"/>
+  </compounddef>
+</doxygen>

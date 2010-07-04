@@ -1,0 +1,497 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="structBT2_1_1MetaData" kind="struct" prot="public">
+    <compoundname>BT2::MetaData</compoundname>
+    <includes refid="MetaData_8h" local="no">MetaData.h</includes>
+    <innerclass refid="structBT2_1_1MetaData_1_1FileData" prot="public">BT2::MetaData::FileData</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structBT2_1_1MetaData_1269588e235cd3905853e49aa4bf256f9" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &gt;</type>
+        <definition>typedef std::vector&lt;BitVector&gt; BT2::MetaData::ChunkFunctionals</definition>
+        <argsstring></argsstring>
+        <name>ChunkFunctionals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="25" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structBT2_1_1MetaData_111fec422b350c95c9abfd3e0f6ba9852" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref></type>
+        <definition>const BitVector BT2::MetaData::EMPTY_FUNCTIONAL</definition>
+        <argsstring></argsstring>
+        <name>EMPTY_FUNCTIONAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Represents an empty functional - used as a place holder </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="30" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structBT2_1_1MetaData_117298c60264f1c81b1d40415b0dd727e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string BT2::MetaData::fileName</definition>
+        <argsstring></argsstring>
+        <name>fileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>File name that we belong to </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="38" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBT2_1_1MetaData_1d7cc021a9dd4fc81e294085797010fa0" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string BT2::MetaData::diskFileName</definition>
+        <argsstring></argsstring>
+        <name>diskFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>File name on disk </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="43" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBT2_1_1MetaData_1ff28266152f7bd835778f3605de5c62d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t BT2::MetaData::chunkSize</definition>
+        <argsstring></argsstring>
+        <name>chunkSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Logical chunk size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="48" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBT2_1_1MetaData_16d3d2246bb1219c55676555cbd4e9549" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structBT2_1_1MetaData_1_1FileData" kindref="compound">FileData</ref> &gt;</type>
+        <definition>std::vector&lt;FileData&gt; BT2::MetaData::containedFiles</definition>
+        <argsstring></argsstring>
+        <name>containedFiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An array of the details of every file contained within this torrent. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="66" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBT2_1_1MetaData_165685e8789b6b6a7671aab1c6ee1cccf" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t BT2::MetaData::fileSize</definition>
+        <argsstring></argsstring>
+        <name>fileSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Total target file size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="71" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBT2_1_1MetaData_1022d3f5fb547f6f90f2068471d2f584f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &gt;</type>
+        <definition>std::vector&lt;BitVector&gt; BT2::MetaData::chunkFunctionals</definition>
+        <argsstring></argsstring>
+        <name>chunkFunctionals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>All chunk functionals (including place holders). This is the functional matrix, containing empty functionals that are not yet used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="78" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="structBT2_1_1MetaData_1f890e55b5cfbc3134e081cbba2902476" prot="private" static="yes" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string BT2::MetaData::METADATA_MAGIC</definition>
+        <argsstring></argsstring>
+        <name>METADATA_MAGIC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Magic that identifies metadata </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="156" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structBT2_1_1MetaData_1c98d07dd8f7b70e16ccb9a01abf56b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class boost::serialization::access</definition>
+        <argsstring></argsstring>
+        <name>boost::serialization::access</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="160" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structBT2_1_1MetaData_12b2901553395723345c6c2f5681bb6c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BT2::MetaData::MetaData</definition>
+        <argsstring>()</argsstring>
+        <name>MetaData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default Constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="structBT2_1_1MetaData_1d2d7c64b558701555fa5ccea3855608d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BT2::MetaData::MetaData</definition>
+        <argsstring>(const std::string &amp;fileName, const std::string &amp;diskFileName, size_t chunkSize, size_t fileSize=0, const std::vector&lt; BitVector &gt; &amp;funcs=std::vector&lt; BitVector &gt;())</argsstring>
+        <name>MetaData</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>diskFileName</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>chunkSize</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>fileSize</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &gt; &amp;</type>
+          <declname>funcs</declname>
+          <defval>std::vector&lt; <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Trivial Constructor from the data itself, for single file torrents. Optional parameters are fileSize and the functional matrix (which can both be calculated in some cases by other classes). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="structBT2_1_1MetaData_18b39af4a7b2b042b5f10fc0c0bda6e64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BT2::MetaData::MetaData</definition>
+        <argsstring>(const std::string &amp;fileName, const std::string &amp;diskFileName, size_t chunkSize, const std::vector&lt; FileData &gt; &amp;containedFiles, const std::vector&lt; BitVector &gt; &amp;funcs=std::vector&lt; BitVector &gt;())</argsstring>
+        <name>MetaData</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>diskFileName</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>chunkSize</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="structBT2_1_1MetaData_1_1FileData" kindref="compound">FileData</ref> &gt; &amp;</type>
+          <declname>containedFiles</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &gt; &amp;</type>
+          <declname>funcs</declname>
+          <defval>std::vector&lt; <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Trivial Constructor from the data itself, for multi file torrents. Optional parameters are the functional matrix (which can be calculated in some cases by other classes). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="structBT2_1_1MetaData_1e7bd7882d02fcae6ef64c7646b391530" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BT2::MetaData::MetaData</definition>
+        <argsstring>(const MetaData &amp;other)</argsstring>
+        <name>MetaData</name>
+        <param>
+          <type>const <ref refid="structBT2_1_1MetaData" kindref="compound">MetaData</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy Constructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="structBT2_1_1MetaData_105b7c25499a65d123185cb6e772b0d8d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BT2::MetaData::isSingleFile</definition>
+        <argsstring>() const </argsstring>
+        <name>isSingleFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the torrent contains a single file. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="structBT2_1_1MetaData_1641f6839cee2da1ecc5906a359f2648c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string BT2::MetaData::getContainedFilePath</definition>
+        <argsstring>(int index) const </argsstring>
+        <name>getContainedFilePath</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the full disk path for the given index of a contained file.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>the</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>full path on disk </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="119"/>
+      </memberdef>
+      <memberdef kind="function" id="structBT2_1_1MetaData_1d950fec7d7f13d1de4292cfccf0b99ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &gt;</type>
+        <definition>std::vector&lt;BitVector&gt; BT2::MetaData::getFunctionals</definition>
+        <argsstring>() const </argsstring>
+        <name>getFunctionals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the vector of actual chunks that exist. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="structBT2_1_1MetaData_1d50068b8294a58c86e250454b99b6ecc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t BT2::MetaData::getMaxChunkCount</definition>
+        <argsstring>() const </argsstring>
+        <name>getMaxChunkCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the max number of chunks. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="129"/>
+      </memberdef>
+      <memberdef kind="function" id="structBT2_1_1MetaData_18835f702f7544547501c8fde4dcff9af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t BT2::MetaData::getChunkCount</definition>
+        <argsstring>() const </argsstring>
+        <name>getChunkCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the actual amount of chunks we have </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="134"/>
+      </memberdef>
+      <memberdef kind="function" id="structBT2_1_1MetaData_11e38b2a5010e17ec9c1b3dbce27a2193" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref></type>
+        <definition>const BitVector BT2::MetaData::getCompletePieces</definition>
+        <argsstring>() const </argsstring>
+        <name>getCompletePieces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a vector representing completed chunk-map of the file A completed chunk&apos;s functional has only one bit set </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="140"/>
+      </memberdef>
+      <memberdef kind="function" id="structBT2_1_1MetaData_18ce5ff1f988eac00fdc4c8a6856f49a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BT2::MetaData::isComplete</definition>
+        <argsstring>() const </argsstring>
+        <name>isComplete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the file is complete, and false otherwise. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="145"/>
+      </memberdef>
+      <memberdef kind="function" id="structBT2_1_1MetaData_13a4c471c882794a2a047ffa6446ae499" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::MetaData::dump</definition>
+        <argsstring>() const </argsstring>
+        <name>dump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints the functionals to stderr for debugging. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="150"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structBT2_1_1MetaData_1824a841dccfa6f611ab7b034338e7e0b" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void BT2::MetaData::save</definition>
+        <argsstring>(Archive &amp;ar, const unsigned int version) const </argsstring>
+        <name>save</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="163" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="163" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="structBT2_1_1MetaData_1ae46c12865801cbf6ab9d30efcd01b78" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void BT2::MetaData::load</definition>
+        <argsstring>(Archive &amp;ar, const unsigned int version)</argsstring>
+        <name>load</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="176" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="176" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="structBT2_1_1MetaData_11f006b6c6abedafc1344bd9eae08904f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void BT2::MetaData::serialize</definition>
+        <argsstring>(Archive &amp;ar, const unsigned int file_version)</argsstring>
+        <name>serialize</name>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>file_version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="195" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="195" bodyend="195"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Meta-data about a file Contains data such as: file size, chunk size chunk lists, etc. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="18">
+        <label>BT2::MetaData</label>
+        <link refid="structBT2_1_1MetaData"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>EMPTY_FUNCTIONAL</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>BT2::BitVector</label>
+        <link refid="classBT2_1_1BitVector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" line="22" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/common/MetaData.h" bodystart="22" bodyend="197"/>
+    <listofallmembers>
+      <member refid="structBT2_1_1MetaData_1c98d07dd8f7b70e16ccb9a01abf56b9c" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>boost::serialization::access</name></member>
+      <member refid="structBT2_1_1MetaData_1269588e235cd3905853e49aa4bf256f9" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>ChunkFunctionals</name></member>
+      <member refid="structBT2_1_1MetaData_1022d3f5fb547f6f90f2068471d2f584f" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>chunkFunctionals</name></member>
+      <member refid="structBT2_1_1MetaData_1ff28266152f7bd835778f3605de5c62d" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>chunkSize</name></member>
+      <member refid="structBT2_1_1MetaData_16d3d2246bb1219c55676555cbd4e9549" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>containedFiles</name></member>
+      <member refid="structBT2_1_1MetaData_1d7cc021a9dd4fc81e294085797010fa0" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>diskFileName</name></member>
+      <member refid="structBT2_1_1MetaData_13a4c471c882794a2a047ffa6446ae499" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>dump</name></member>
+      <member refid="structBT2_1_1MetaData_111fec422b350c95c9abfd3e0f6ba9852" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>EMPTY_FUNCTIONAL</name></member>
+      <member refid="structBT2_1_1MetaData_117298c60264f1c81b1d40415b0dd727e" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>fileName</name></member>
+      <member refid="structBT2_1_1MetaData_165685e8789b6b6a7671aab1c6ee1cccf" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>fileSize</name></member>
+      <member refid="structBT2_1_1MetaData_18835f702f7544547501c8fde4dcff9af" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>getChunkCount</name></member>
+      <member refid="structBT2_1_1MetaData_11e38b2a5010e17ec9c1b3dbce27a2193" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>getCompletePieces</name></member>
+      <member refid="structBT2_1_1MetaData_1641f6839cee2da1ecc5906a359f2648c" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>getContainedFilePath</name></member>
+      <member refid="structBT2_1_1MetaData_1d950fec7d7f13d1de4292cfccf0b99ea" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>getFunctionals</name></member>
+      <member refid="structBT2_1_1MetaData_1d50068b8294a58c86e250454b99b6ecc" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>getMaxChunkCount</name></member>
+      <member refid="structBT2_1_1MetaData_18ce5ff1f988eac00fdc4c8a6856f49a9" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>isComplete</name></member>
+      <member refid="structBT2_1_1MetaData_105b7c25499a65d123185cb6e772b0d8d" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>isSingleFile</name></member>
+      <member refid="structBT2_1_1MetaData_1ae46c12865801cbf6ab9d30efcd01b78" prot="private" virt="non-virtual"><scope>BT2::MetaData</scope><name>load</name></member>
+      <member refid="structBT2_1_1MetaData_12b2901553395723345c6c2f5681bb6c8" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>MetaData</name></member>
+      <member refid="structBT2_1_1MetaData_1d2d7c64b558701555fa5ccea3855608d" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>MetaData</name></member>
+      <member refid="structBT2_1_1MetaData_18b39af4a7b2b042b5f10fc0c0bda6e64" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>MetaData</name></member>
+      <member refid="structBT2_1_1MetaData_1e7bd7882d02fcae6ef64c7646b391530" prot="public" virt="non-virtual"><scope>BT2::MetaData</scope><name>MetaData</name></member>
+      <member refid="structBT2_1_1MetaData_1f890e55b5cfbc3134e081cbba2902476" prot="private" virt="non-virtual"><scope>BT2::MetaData</scope><name>METADATA_MAGIC</name></member>
+      <member refid="structBT2_1_1MetaData_1824a841dccfa6f611ab7b034338e7e0b" prot="private" virt="non-virtual"><scope>BT2::MetaData</scope><name>save</name></member>
+      <member refid="structBT2_1_1MetaData_11f006b6c6abedafc1344bd9eae08904f" prot="private" virt="non-virtual"><scope>BT2::MetaData</scope><name>serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

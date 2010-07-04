@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="dir_f567a271a729f05c17f0e1c8203f5721" kind="dir">
+    <compoundname>src/betterp2p/</compoundname>
+    <innerdir refid="dir_ccea444f360564d5ccb27c4a79e9bc6a">src/betterp2p/algorithm/</innerdir>
+    <innerdir refid="dir_609a716f105b2041f70e8cab2dd71ce3">src/betterp2p/common/</innerdir>
+    <innerdir refid="dir_9f198c819982a3866ef77728a226cbad">src/betterp2p/control/</innerdir>
+    <innerdir refid="dir_3edde6238366504972cf40f3019bf4be">src/betterp2p/filesystem/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/"/>
+  </compounddef>
+</doxygen>

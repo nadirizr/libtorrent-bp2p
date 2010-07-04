@@ -1,0 +1,4 @@
+libbp2p
+libtorrent
+bp2p
+deluge

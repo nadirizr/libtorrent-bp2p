@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="classBT2_1_1PartialAlgorithm" kind="class" prot="public">
+    <compoundname>BT2::PartialAlgorithm</compoundname>
+    <includes refid="PartialAlgorithm_8h" local="no">PartialAlgorithm.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classBT2_1_1PartialAlgorithm_178ba41074e3dd4078babee7159ff02e9" prot="private" static="yes" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t BT2::PartialAlgorithm::END_GAME_CONSTANT</definition>
+        <argsstring></argsstring>
+        <name>END_GAME_CONSTANT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constant for number of remaining chunks below which the endgame mode is activated </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="86" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBT2_1_1PartialAlgorithm_1b4c3cafa0e3dfc608d012587d83f68d2" prot="private" static="no" mutable="no">
+        <type><ref refid="classBT2_1_1FileObject" kindref="compound">FileObject</ref> &amp;</type>
+        <definition>FileObject&amp; BT2::PartialAlgorithm::m_file</definition>
+        <argsstring></argsstring>
+        <name>m_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>File which the algorithm operates on </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="93" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBT2_1_1PartialAlgorithm_14fed11f4c5de074157f4da0934c635bf" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t BT2::PartialAlgorithm::m_numGeneratedChunks</definition>
+        <argsstring></argsstring>
+        <name>m_numGeneratedChunks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of generated chunks, used to determine how many functionals we should cram into the chunk </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="99" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBT2_1_1PartialAlgorithm_162daaff4e4e64fb396badfb7eabd10cb" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t BT2::PartialAlgorithm::m_wasEliminated</definition>
+        <argsstring></argsstring>
+        <name>m_wasEliminated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if elimination could be performed </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="104" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBT2_1_1PartialAlgorithm_1dad3f99897b3346117151d638fc09c00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BT2::PartialAlgorithm::PartialAlgorithm</definition>
+        <argsstring>(FileObject &amp;file)</argsstring>
+        <name>PartialAlgorithm</name>
+        <param>
+          <type><ref refid="classBT2_1_1FileObject" kindref="compound">FileObject</ref> &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a partial file algorithm The <ref refid="classBT2_1_1FileObject" kindref="compound">FileObject</ref> instance is assumed to be managed by somebody else, the algorithm only holds a reference to it </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1PartialAlgorithm_173f54736acb26a25a5061b9645a6d113" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual BT2::PartialAlgorithm::~PartialAlgorithm</definition>
+        <argsstring>()</argsstring>
+        <name>~PartialAlgorithm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1PartialAlgorithm_137c75717bab72f1c72ca74af04a68ddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BT2::PartialAlgorithm::canAddFunctional</definition>
+        <argsstring>(const BitVector &amp;functional)</argsstring>
+        <name>canAddFunctional</name>
+        <param>
+          <type>const <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>functional</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks a-priory if specified functional may potentially provide independent information to the file. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>functional</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>functional coefficients </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1PartialAlgorithm_1beb276fa0fbe137e5602fe3477e86487" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BT2::PartialAlgorithm::addChunk</definition>
+        <argsstring>(const Chunk &amp;c)</argsstring>
+        <name>addChunk</name>
+        <param>
+          <type>const <ref refid="classBT2_1_1Chunk" kindref="compound">Chunk</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tries to add a chunk to the partial file</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>chunk to add </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the chunk contained useful data false if the chunk was linearly-dependent on existing chunks </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1PartialAlgorithm_10de3ec2e958b64391161cad43c7c2b24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BT2::PartialAlgorithm::isEndGame</definition>
+        <argsstring>()</argsstring>
+        <name>isEndGame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Endgame has different rules, clients should not be penalized for sending linearly dependent chunks (or the penalty should be different) <simplesect kind="return"><para>true if the file is in endgame mode (i.e misses only a few chunks) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1PartialAlgorithm_147bfd5c5e145e86085c24ac8db6069f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classBT2_1_1Chunk" kindref="compound">Chunk</ref></type>
+        <definition>Chunk BT2::PartialAlgorithm::getChunk</definition>
+        <argsstring>()</argsstring>
+        <name>getChunk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs a chunk from a random set of functionals. The returned chunk is a combination of existing chunks of the file.</para><para>If there are no good chunks, a chunk with popcount 0 is returned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1PartialAlgorithm_1474ca85385572d6505064798e5d91aa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BT2::PartialAlgorithm::isDone</definition>
+        <argsstring>()</argsstring>
+        <name>isDone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the matrix has enough information for elimination. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1PartialAlgorithm_143f2022fca25eca19e75aa7ba0acd4fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::PartialAlgorithm::wrapUp</definition>
+        <argsstring>()</argsstring>
+        <name>wrapUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function must be called only if <ref refid="classBT2_1_1PartialAlgorithm_1474ca85385572d6505064798e5d91aa9" kindref="member">isDone()</ref>. It will do matrix elimination and mark the file as complete. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="71"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classBT2_1_1PartialAlgorithm_1f6d3fc57087700b6ae405a1ac0fe6bb7" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BT2::PartialAlgorithm::semiReduce</definition>
+        <argsstring>(const BitVector &amp;functional, std::vector&lt; BitVector &gt; &amp;to_xor_functionals) const </argsstring>
+        <name>semiReduce</name>
+        <param>
+          <type>const <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>functional</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &gt; &amp;</type>
+          <declname>to_xor_functionals</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1PartialAlgorithm_10f455cc5287f57f150b2a052041d6de6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BT2::PartialAlgorithm::isUpperTriangular</definition>
+        <argsstring>()</argsstring>
+        <name>isUpperTriangular</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1PartialAlgorithm_16ea0dcfc3f29683087d0347a2e297b3a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BT2::PartialAlgorithm::isIdentityMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>isIdentityMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1PartialAlgorithm_10f15cd6a6bba982b75a6bcfc9e1398ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::PartialAlgorithm::gaussElimination</definition>
+        <argsstring>()</argsstring>
+        <name>gaussElimination</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classBT2_1_1PartialAlgorithm" kindref="compound">PartialAlgorithm</ref> knows how to handle partial files.</para><para>The algorithm wraps getChunk and putChunk of the partial file </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="28">
+        <label>BT2::FileObject</label>
+        <link refid="classBT2_1_1FileObject"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>m_metadata</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>m_metafile</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>BT2::PartialAlgorithm</label>
+        <link refid="classBT2_1_1PartialAlgorithm"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>m_file</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>BT2::MetaFile</label>
+        <link refid="classBT2_1_1MetaFile"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>m_metadata</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>BT2::MetaData</label>
+        <link refid="structBT2_1_1MetaData"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>EMPTY_FUNCTIONAL</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>BT2::BitVector</label>
+        <link refid="classBT2_1_1BitVector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" line="19" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/algorithm/PartialAlgorithm.h" bodystart="19" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classBT2_1_1PartialAlgorithm_1beb276fa0fbe137e5602fe3477e86487" prot="public" virt="non-virtual"><scope>BT2::PartialAlgorithm</scope><name>addChunk</name></member>
+      <member refid="classBT2_1_1PartialAlgorithm_137c75717bab72f1c72ca74af04a68ddc" prot="public" virt="non-virtual"><scope>BT2::PartialAlgorithm</scope><name>canAddFunctional</name></member>
+      <member refid="classBT2_1_1PartialAlgorithm_178ba41074e3dd4078babee7159ff02e9" prot="private" virt="non-virtual"><scope>BT2::PartialAlgorithm</scope><name>END_GAME_CONSTANT</name></member>
+      <member refid="classBT2_1_1PartialAlgorithm_10f15cd6a6bba982b75a6bcfc9e1398ba" prot="private" virt="non-virtual"><scope>BT2::PartialAlgorithm</scope><name>gaussElimination</name></member>
+      <member refid="classBT2_1_1PartialAlgorithm_147bfd5c5e145e86085c24ac8db6069f8" prot="public" virt="non-virtual"><scope>BT2::PartialAlgorithm</scope><name>getChunk</name></member>
+      <member refid="classBT2_1_1PartialAlgorithm_1474ca85385572d6505064798e5d91aa9" prot="public" virt="non-virtual"><scope>BT2::PartialAlgorithm</scope><name>isDone</name></member>
+      <member refid="classBT2_1_1PartialAlgorithm_10de3ec2e958b64391161cad43c7c2b24" prot="public" virt="non-virtual"><scope>BT2::PartialAlgorithm</scope><name>isEndGame</name></member>
+      <member refid="classBT2_1_1PartialAlgorithm_16ea0dcfc3f29683087d0347a2e297b3a" prot="private" virt="non-virtual"><scope>BT2::PartialAlgorithm</scope><name>isIdentityMatrix</name></member>
+      <member refid="classBT2_1_1PartialAlgorithm_10f455cc5287f57f150b2a052041d6de6" prot="private" virt="non-virtual"><scope>BT2::PartialAlgorithm</scope><name>isUpperTriangular</name></member>
+      <member refid="classBT2_1_1PartialAlgorithm_1b4c3cafa0e3dfc608d012587d83f68d2" prot="private" virt="non-virtual"><scope>BT2::PartialAlgorithm</scope><name>m_file</name></member>
+      <member refid="classBT2_1_1PartialAlgorithm_14fed11f4c5de074157f4da0934c635bf" prot="private" virt="non-virtual"><scope>BT2::PartialAlgorithm</scope><name>m_numGeneratedChunks</name></member>
+      <member refid="classBT2_1_1PartialAlgorithm_162daaff4e4e64fb396badfb7eabd10cb" prot="private" virt="non-virtual"><scope>BT2::PartialAlgorithm</scope><name>m_wasEliminated</name></member>
+      <member refid="classBT2_1_1PartialAlgorithm_1dad3f99897b3346117151d638fc09c00" prot="public" virt="non-virtual"><scope>BT2::PartialAlgorithm</scope><name>PartialAlgorithm</name></member>
+      <member refid="classBT2_1_1PartialAlgorithm_1f6d3fc57087700b6ae405a1ac0fe6bb7" prot="private" virt="non-virtual"><scope>BT2::PartialAlgorithm</scope><name>semiReduce</name></member>
+      <member refid="classBT2_1_1PartialAlgorithm_143f2022fca25eca19e75aa7ba0acd4fb" prot="public" virt="non-virtual"><scope>BT2::PartialAlgorithm</scope><name>wrapUp</name></member>
+      <member refid="classBT2_1_1PartialAlgorithm_173f54736acb26a25a5061b9645a6d113" prot="public" virt="virtual"><scope>BT2::PartialAlgorithm</scope><name>~PartialAlgorithm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

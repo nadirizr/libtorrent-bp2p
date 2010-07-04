@@ -1,0 +1,807 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="classBT2_1_1FileObject" kind="class" prot="public">
+    <compoundname>BT2::FileObject</compoundname>
+    <includes refid="FileObject_8h" local="no">FileObject.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32" prot="public" static="no">
+        <name>FileState</name>
+        <enumvalue id="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da3220a65e81e34fbfd3f7db36e4dde6b2f5" prot="public">
+          <name>UNKNOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32c7e001ad695242f973ce980fa67c17ab" prot="public">
+          <name>NEW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32d9e13bd211e5162c890b6ca3cae72d2f" prot="public">
+          <name>INCOMPLETE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32531d09589e5a75c15dce61a6cdb643db" prot="public">
+          <name>COMPLETE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The state of the file we are downloading: UNKNOWN - the state of the file is not known, to be determined later. NEW - the file does not yet exist, and is to be created. INCOMPLETE - some portion of the file already exists, but not all of it. COMPLETE - all of the file exists on disk. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="25" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBT2_1_1FileObject_11976dee7be00195143dbc272bd103767" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; boost::filesystem::fstream * &gt;</type>
+        <definition>std::vector&lt;boost::filesystem::fstream*&gt; BT2::FileObject::m_files</definition>
+        <argsstring></argsstring>
+        <name>m_files</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The files we are working with </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="252" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBT2_1_1FileObject_1a2b408e1c3988565910345a4a4d9c386" prot="private" static="no" mutable="no">
+        <type><ref refid="classBT2_1_1MetaFile" kindref="compound">MetaFile</ref> *</type>
+        <definition>MetaFile* BT2::FileObject::m_metafile</definition>
+        <argsstring></argsstring>
+        <name>m_metafile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The meta-data information file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="254" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBT2_1_1FileObject_1068b30b6e52c069df475c0b0e10b118c" prot="private" static="no" mutable="no">
+        <type><ref refid="structBT2_1_1MetaData" kindref="compound">MetaData</ref> *</type>
+        <definition>MetaData* BT2::FileObject::m_metadata</definition>
+        <argsstring></argsstring>
+        <name>m_metadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The meta-data itself </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="256" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBT2_1_1FileObject_12717d4a64d866a467e8563108df8602b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BT2::FileObject::FileObject</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>FileObject</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs the <ref refid="classBT2_1_1FileObject" kindref="compound">FileObject</ref> from the file name (torrent name). An attempt is made to locate the metafile and load the metadata information from there.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1eafd805571a63797c6cd35e66e46b4e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BT2::FileObject::FileObject</definition>
+        <argsstring>(const MetaData &amp;metadata, FileState state=UNKNOWN)</argsstring>
+        <name>FileObject</name>
+        <param>
+          <type>const <ref refid="structBT2_1_1MetaData" kindref="compound">MetaData</ref> &amp;</type>
+          <declname>metadata</declname>
+        </param>
+        <param>
+          <type><ref refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32" kindref="member">FileState</ref></type>
+          <declname>state</declname>
+          <defval>UNKNOWN</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct the <ref refid="classBT2_1_1FileObject" kindref="compound">FileObject</ref> from the given meta-data and file state. If the file is new, the object is constructed using the meta-data of the file to create, and the file state value of NEW. If the file is still downloading and incomplete, the meta-data is given, or a meta-file exists (meta-file overrides new meta-data), and the file state value of INCOMPLETE. If the file is already complete, with whatever meta-data exists and the file state value of FULL.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="structBT2_1_1MetaData" kindref="compound">MetaData</ref> of the file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da3220a65e81e34fbfd3f7db36e4dde6b2f5" kindref="member">FileObject::UNKNOWN</ref> to specify that the constructor should determine what is the correct state (DEFAULT) <ref refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32c7e001ad695242f973ce980fa67c17ab" kindref="member">FileObject::NEW</ref> to specify a new file, <ref refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32d9e13bd211e5162c890b6ca3cae72d2f" kindref="member">FileObject::INCOMPLETE</ref> to specify a file still in progress, <ref refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32531d09589e5a75c15dce61a6cdb643db" kindref="member">FileObject::COMPLETE</ref> to specify a complete file for seeding </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1973f2da7733b30f626233c9be35b4a88" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual BT2::FileObject::~FileObject</definition>
+        <argsstring>()</argsstring>
+        <name>~FileObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1c5c3bc22233f966b3988043c27ce1d1b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structBT2_1_1MetaData" kindref="compound">MetaData</ref> &amp;</type>
+        <definition>const MetaData&amp; BT2::FileObject::getMetaData</definition>
+        <argsstring>() const </argsstring>
+        <name>getMetaData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the meta-data of the file.</para><para><simplesect kind="return"><para>the meta-data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="63" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1388c759ce8f4e0957de2f5f17a5deb59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structBT2_1_1MetaData" kindref="compound">MetaData</ref> &amp;</type>
+        <definition>MetaData&amp; BT2::FileObject::getMetaData</definition>
+        <argsstring>()</argsstring>
+        <name>getMetaData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="64" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1e18391430e136f2248d121dbe07fdd23" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &gt;</type>
+        <definition>std::vector&lt;BitVector&gt; BT2::FileObject::getFunctionals</definition>
+        <argsstring>() const </argsstring>
+        <name>getFunctionals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the list of all the functionals that currently exist in the file.</para><para><simplesect kind="return"><para>the functional list </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1853382155fdf0e26b7843d089123b169" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt;BitVector&gt;&amp; BT2::FileObject::getFunctionalMatrix</definition>
+        <argsstring>() const </argsstring>
+        <name>getFunctionalMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the list of all the functionals, including empty placeholders. This in fact is the complete functional matrix.</para><para><simplesect kind="return"><para>the functional matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_110e5a015eaf7742be3dbb1e5731dcfa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classBT2_1_1Chunk" kindref="compound">Chunk</ref></type>
+        <definition>Chunk BT2::FileObject::getChunk</definition>
+        <argsstring>(int chunk_num)</argsstring>
+        <name>getChunk</name>
+        <param>
+          <type>int</type>
+          <declname>chunk_num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the chunk at the given slot.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chunk_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the chunk number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the chunk </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_142c3fd37b4c4f4ccf2a23401b1c3b3ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classBT2_1_1Chunk" kindref="compound">Chunk</ref></type>
+        <definition>Chunk BT2::FileObject::getChunk</definition>
+        <argsstring>(const std::vector&lt; BitVector &gt; &amp;functionals)</argsstring>
+        <name>getChunk</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &gt; &amp;</type>
+          <declname>functionals</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generates a new chunk from the file using a combination of all the functionals given.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>functionals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the list of functionals to combine </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the generated chunk </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_141850ad8931b6ecda22d349a7ab59e66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classBT2_1_1Chunk" kindref="compound">Chunk</ref></type>
+        <definition>Chunk BT2::FileObject::getChunk</definition>
+        <argsstring>(const BitVector &amp;a, const BitVector &amp;b)</argsstring>
+        <name>getChunk</name>
+        <param>
+          <type>const <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generates a new chunk from the file using a combination of the 2 functionals given. This is a common use case of the getChunk(vector).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first functional </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the second functional </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the generated chunk </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1b3609144ee8cd6cb0308575e0650f2e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::FileObject::putChunk</definition>
+        <argsstring>(const Chunk &amp;c)</argsstring>
+        <name>putChunk</name>
+        <param>
+          <type>const <ref refid="classBT2_1_1Chunk" kindref="compound">Chunk</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inserts the given chunk into the file, adding its functional to the list of those that can be used to seed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the chunk to insert </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_158f4a42c08bbcdd027e062bc460f88c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::FileObject::putCombinedChunks</definition>
+        <argsstring>(const std::vector&lt; BitVector &gt; &amp;functionals)</argsstring>
+        <name>putCombinedChunks</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &gt; &amp;</type>
+          <declname>functionals</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs a combination (xor) of the given chunks according to functionals, and inserts the resulting chunk.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>functionals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the source functionals to combine </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_12faf855ac6a44320f198f4e3847d1c0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::FileObject::putCombinedChunks</definition>
+        <argsstring>(const std::vector&lt; BitVector &gt; &amp;functionals, const Chunk &amp;chunk)</argsstring>
+        <name>putCombinedChunks</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &gt; &amp;</type>
+          <declname>functionals</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classBT2_1_1Chunk" kindref="compound">Chunk</ref> &amp;</type>
+          <declname>chunk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs a combination (xor) of the given chunks according to functionals, and inserts the resulting chunk. The additional chunk given, will be combined with all the rest before inserting.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>functionals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the source functionals to combine </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chunk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the additional chunk to combine </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1296e1832c804b0c8f30ab6766afa4d50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::FileObject::completeFiles</definition>
+        <argsstring>()</argsstring>
+        <name>completeFiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs completion routines on the file. This should be called when the algorithm determines that the download is complete. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_11d4c3c278b86880cfe7b6881644d0b17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::FileObject::closeFiles</definition>
+        <argsstring>()</argsstring>
+        <name>closeFiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Closes the files and releases all handles. This is usefull if other operations are to be done on the files, such as renaming them. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1e6c329d739686ce622266bb2e126b722" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::FileObject::reopenFiles</definition>
+        <argsstring>()</argsstring>
+        <name>reopenFiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reopens the files after they have been closed. The files must be already initialized before hand. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_113dd99921e3bea2452f1c56b7ede0dc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::FileObject::persist</definition>
+        <argsstring>()</argsstring>
+        <name>persist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Save all volatile information to disk. Saves the meta-data file if we have one. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="156"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classBT2_1_1FileObject_1a126e142deecb872ee0d0a7b3d0ecd68" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t BT2::FileObject::getFileSize</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>getFileSize</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the file size of the given file index. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_13f5b290ae32fb8f5af3ab4a7e3076aff" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t BT2::FileObject::getFilesSize</definition>
+        <argsstring>()</argsstring>
+        <name>getFilesSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the size of all files. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="167"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classBT2_1_1FileObject_196ae8b11a784b6da8c8dec58cc2797e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::FileObject::initializeFiles</definition>
+        <argsstring>()</argsstring>
+        <name>initializeFiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the internal files. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_16774e6986623d0fec06ecfbca1e03e48" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::FileObject::initializeMetaData</definition>
+        <argsstring>()</argsstring>
+        <name>initializeMetaData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the internal metadata </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1cfcf9d2769c517a99e35b95216b7af50" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::FileObject::replaceChunk</definition>
+        <argsstring>(const Chunk &amp;c)</argsstring>
+        <name>replaceChunk</name>
+        <param>
+          <type>const <ref refid="classBT2_1_1Chunk" kindref="compound">Chunk</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Replaces an existing chunk (at the appropriate place) with the given chunk. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>chunk </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_13c76729c91fe32d01c4957011c79a83a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classBT2_1_1Chunk" kindref="compound">Chunk</ref></type>
+        <definition>Chunk BT2::FileObject::readChunkFromFiles</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>readChunkFromFiles</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads the actual chunk from its index in the file.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file chunk index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the real chunk </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1cd0444e315280629d46a3ff009367ef9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::FileObject::writeChunkToFiles</definition>
+        <argsstring>(const Chunk &amp;c, size_t index)</argsstring>
+        <name>writeChunkToFiles</name>
+        <param>
+          <type>const <ref refid="classBT2_1_1Chunk" kindref="compound">Chunk</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Writes the actual chunk to the file, at the optional given index, or at the end of the file if none given.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the chunk to write </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index to write the chunk to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1a240ba426f33be382a00ebf812652f15" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::FileObject::createDefaultGeometry</definition>
+        <argsstring>(const std::string &amp;filename, size_t fileSize, size_t chunkSize)</argsstring>
+        <name>createDefaultGeometry</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>fileSize</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>chunkSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the geometry members in the metadata according to the actual file size.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fileSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file size to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chunkSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>chunk size to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1c5f7624875ffe3306bb9bd567f65fd41" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::FileObject::createIdentityMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>createIdentityMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the functionals to the identity matrix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_11668cc1af55345609ec1072781b3c6c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BT2::FileObject::createEmptyMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>createEmptyMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the functionals to an empty matrix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1f7b40ea0cce761cbda54e349435b84bc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t BT2::FileObject::calculateFunctionalIndex</definition>
+        <argsstring>(const BitVector &amp;functional)</argsstring>
+        <name>calculateFunctionalIndex</name>
+        <param>
+          <type>const <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &amp;</type>
+          <declname>functional</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates the index in the file where the given chunk functional should go. The actual calculation is done according to the amount of leading zeros in the functional. A functional with N leading zeros means the index is N.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>functional</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the functional of the chunk to check </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the index where the chunk should go in the file </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1a6aeb187fbf9b3f6f006af6373e86f02" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structBT2_1_1MetaData_1_1FileData" kindref="compound">MetaData::FileData</ref> &gt;</type>
+        <definition>std::vector&lt;MetaData::FileData&gt; BT2::FileObject::calculateFilesForIndex</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>calculateFilesForIndex</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates what files and offsets are required to read or write the chunk at the given index.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the chunk </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a vector of all the file positions that the chunk contains </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileObject_1fc2131afce2e8d29d9d432c22397e68a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classBT2_1_1BitVector" kindref="compound">BitVector</ref> &gt; &amp;</type>
+        <definition>std::vector&lt;BitVector&gt;&amp; BT2::FileObject::funcs</definition>
+        <argsstring>()</argsstring>
+        <name>funcs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience function: return a reference to the functional matrix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="248"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="13">
+        <label>BT2::FileObject</label>
+        <link refid="classBT2_1_1FileObject"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>m_metadata</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>m_metafile</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>BT2::MetaFile</label>
+        <link refid="classBT2_1_1MetaFile"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>m_metadata</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>BT2::MetaData</label>
+        <link refid="structBT2_1_1MetaData"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>EMPTY_FUNCTIONAL</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>BT2::BitVector</label>
+        <link refid="classBT2_1_1BitVector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" line="16" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/FileObject.h" bodystart="16" bodyend="257"/>
+    <listofallmembers>
+      <member refid="classBT2_1_1FileObject_1a6aeb187fbf9b3f6f006af6373e86f02" prot="private" virt="non-virtual"><scope>BT2::FileObject</scope><name>calculateFilesForIndex</name></member>
+      <member refid="classBT2_1_1FileObject_1f7b40ea0cce761cbda54e349435b84bc" prot="private" virt="non-virtual"><scope>BT2::FileObject</scope><name>calculateFunctionalIndex</name></member>
+      <member refid="classBT2_1_1FileObject_11d4c3c278b86880cfe7b6881644d0b17" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>closeFiles</name></member>
+      <member refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32531d09589e5a75c15dce61a6cdb643db" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>COMPLETE</name></member>
+      <member refid="classBT2_1_1FileObject_1296e1832c804b0c8f30ab6766afa4d50" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>completeFiles</name></member>
+      <member refid="classBT2_1_1FileObject_1a240ba426f33be382a00ebf812652f15" prot="private" virt="non-virtual"><scope>BT2::FileObject</scope><name>createDefaultGeometry</name></member>
+      <member refid="classBT2_1_1FileObject_11668cc1af55345609ec1072781b3c6c1" prot="private" virt="non-virtual"><scope>BT2::FileObject</scope><name>createEmptyMatrix</name></member>
+      <member refid="classBT2_1_1FileObject_1c5f7624875ffe3306bb9bd567f65fd41" prot="private" virt="non-virtual"><scope>BT2::FileObject</scope><name>createIdentityMatrix</name></member>
+      <member refid="classBT2_1_1FileObject_12717d4a64d866a467e8563108df8602b" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>FileObject</name></member>
+      <member refid="classBT2_1_1FileObject_1eafd805571a63797c6cd35e66e46b4e3" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>FileObject</name></member>
+      <member refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>FileState</name></member>
+      <member refid="classBT2_1_1FileObject_1fc2131afce2e8d29d9d432c22397e68a" prot="private" virt="non-virtual"><scope>BT2::FileObject</scope><name>funcs</name></member>
+      <member refid="classBT2_1_1FileObject_110e5a015eaf7742be3dbb1e5731dcfa7" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>getChunk</name></member>
+      <member refid="classBT2_1_1FileObject_142c3fd37b4c4f4ccf2a23401b1c3b3ad" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>getChunk</name></member>
+      <member refid="classBT2_1_1FileObject_141850ad8931b6ecda22d349a7ab59e66" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>getChunk</name></member>
+      <member refid="classBT2_1_1FileObject_1a126e142deecb872ee0d0a7b3d0ecd68" prot="protected" virt="non-virtual"><scope>BT2::FileObject</scope><name>getFileSize</name></member>
+      <member refid="classBT2_1_1FileObject_13f5b290ae32fb8f5af3ab4a7e3076aff" prot="protected" virt="non-virtual"><scope>BT2::FileObject</scope><name>getFilesSize</name></member>
+      <member refid="classBT2_1_1FileObject_1853382155fdf0e26b7843d089123b169" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>getFunctionalMatrix</name></member>
+      <member refid="classBT2_1_1FileObject_1e18391430e136f2248d121dbe07fdd23" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>getFunctionals</name></member>
+      <member refid="classBT2_1_1FileObject_1c5c3bc22233f966b3988043c27ce1d1b" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>getMetaData</name></member>
+      <member refid="classBT2_1_1FileObject_1388c759ce8f4e0957de2f5f17a5deb59" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>getMetaData</name></member>
+      <member refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32d9e13bd211e5162c890b6ca3cae72d2f" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>INCOMPLETE</name></member>
+      <member refid="classBT2_1_1FileObject_196ae8b11a784b6da8c8dec58cc2797e4" prot="private" virt="non-virtual"><scope>BT2::FileObject</scope><name>initializeFiles</name></member>
+      <member refid="classBT2_1_1FileObject_16774e6986623d0fec06ecfbca1e03e48" prot="private" virt="non-virtual"><scope>BT2::FileObject</scope><name>initializeMetaData</name></member>
+      <member refid="classBT2_1_1FileObject_11976dee7be00195143dbc272bd103767" prot="private" virt="non-virtual"><scope>BT2::FileObject</scope><name>m_files</name></member>
+      <member refid="classBT2_1_1FileObject_1068b30b6e52c069df475c0b0e10b118c" prot="private" virt="non-virtual"><scope>BT2::FileObject</scope><name>m_metadata</name></member>
+      <member refid="classBT2_1_1FileObject_1a2b408e1c3988565910345a4a4d9c386" prot="private" virt="non-virtual"><scope>BT2::FileObject</scope><name>m_metafile</name></member>
+      <member refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32c7e001ad695242f973ce980fa67c17ab" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>NEW</name></member>
+      <member refid="classBT2_1_1FileObject_113dd99921e3bea2452f1c56b7ede0dc5" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>persist</name></member>
+      <member refid="classBT2_1_1FileObject_1b3609144ee8cd6cb0308575e0650f2e7" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>putChunk</name></member>
+      <member refid="classBT2_1_1FileObject_158f4a42c08bbcdd027e062bc460f88c1" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>putCombinedChunks</name></member>
+      <member refid="classBT2_1_1FileObject_12faf855ac6a44320f198f4e3847d1c0d" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>putCombinedChunks</name></member>
+      <member refid="classBT2_1_1FileObject_13c76729c91fe32d01c4957011c79a83a" prot="private" virt="non-virtual"><scope>BT2::FileObject</scope><name>readChunkFromFiles</name></member>
+      <member refid="classBT2_1_1FileObject_1e6c329d739686ce622266bb2e126b722" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>reopenFiles</name></member>
+      <member refid="classBT2_1_1FileObject_1cfcf9d2769c517a99e35b95216b7af50" prot="private" virt="non-virtual"><scope>BT2::FileObject</scope><name>replaceChunk</name></member>
+      <member refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da3220a65e81e34fbfd3f7db36e4dde6b2f5" prot="public" virt="non-virtual"><scope>BT2::FileObject</scope><name>UNKNOWN</name></member>
+      <member refid="classBT2_1_1FileObject_1cd0444e315280629d46a3ff009367ef9" prot="private" virt="non-virtual"><scope>BT2::FileObject</scope><name>writeChunkToFiles</name></member>
+      <member refid="classBT2_1_1FileObject_1973f2da7733b30f626233c9be35b4a88" prot="public" virt="virtual"><scope>BT2::FileObject</scope><name>~FileObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

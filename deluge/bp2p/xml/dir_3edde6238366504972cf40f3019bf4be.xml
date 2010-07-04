@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="dir_3edde6238366504972cf40f3019bf4be" kind="dir">
+    <compoundname>src/betterp2p/filesystem/</compoundname>
+    <innerfile refid="Chunk_8h">Chunk.h</innerfile>
+    <innerfile refid="FileObject_8h">FileObject.h</innerfile>
+    <innerfile refid="MetaFile_8h">MetaFile.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/filesystem/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="classBT2_1_1FileHandler" kind="class" prot="public">
+    <compoundname>BT2::FileHandler</compoundname>
+    <includes refid="FileHandler_8h" local="no">FileHandler.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBT2_1_1FileHandler_13e493acb5ee32d5615868f1794ddefbd" prot="private" static="no" mutable="no">
+        <type><ref refid="classBT2_1_1FileObject" kindref="compound">FileObject</ref></type>
+        <definition>FileObject BT2::FileHandler::m_fileobject</definition>
+        <argsstring></argsstring>
+        <name>m_fileobject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" line="89" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBT2_1_1FileHandler_1947506ad3ade2bd3364fb323541bd499" prot="private" static="no" mutable="no">
+        <type><ref refid="classBT2_1_1PartialAlgorithm" kindref="compound">PartialAlgorithm</ref></type>
+        <definition>PartialAlgorithm BT2::FileHandler::m_algorithm</definition>
+        <argsstring></argsstring>
+        <name>m_algorithm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" line="90" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBT2_1_1FileHandler_1dfec7869adf832779520170672879fa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BT2::FileHandler::FileHandler</definition>
+        <argsstring>(const std::string &amp;diskFileName)</argsstring>
+        <name>FileHandler</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>diskFileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a file handler for the given file name on disk. This assumes the existence of a meta-file in order to manage.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>diskFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file name on disk to handle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" line="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileHandler_10eeaef80a0045fe113f6dd773dfd6305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BT2::FileHandler::FileHandler</definition>
+        <argsstring>(const MetaData &amp;metadata, FileObject::FileState state=FileObject::UNKNOWN)</argsstring>
+        <name>FileHandler</name>
+        <param>
+          <type>const <ref refid="structBT2_1_1MetaData" kindref="compound">MetaData</ref> &amp;</type>
+          <declname>metadata</declname>
+        </param>
+        <param>
+          <type><ref refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32" kindref="member">FileObject::FileState</ref></type>
+          <declname>state</declname>
+          <defval>FileObject::UNKNOWN</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a file handler for the given meta-data and optional file state.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the meta-data for the file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file state for the file (DEFAULT - UNKNOWN) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileHandler_1a4a07eeba504bf755869b2a8019d314a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structBT2_1_1MetaData" kindref="compound">MetaData</ref> &amp;</type>
+        <definition>const MetaData&amp; BT2::FileHandler::getMetaData</definition>
+        <argsstring>() const </argsstring>
+        <name>getMetaData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the metadata for the file we are downloading. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileHandler_1f745554a4d01c950a0ab2b64ce3b3151" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structBT2_1_1MetaData" kindref="compound">MetaData</ref> &amp;</type>
+        <definition>MetaData&amp; BT2::FileHandler::getMetaData</definition>
+        <argsstring>()</argsstring>
+        <name>getMetaData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileHandler_129210045cc9b5662f594428456434152" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; BT2::FileHandler::getFilename</definition>
+        <argsstring>() const </argsstring>
+        <name>getFilename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the filename of the file we are downloading. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileHandler_1020e8c893abc916e887be50e5b554215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classBT2_1_1FileObject" kindref="compound">FileObject</ref> &amp;</type>
+        <definition>FileObject&amp; BT2::FileHandler::getFileObject</definition>
+        <argsstring>()</argsstring>
+        <name>getFileObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the internal <ref refid="classBT2_1_1FileObject" kindref="compound">FileObject</ref> for the file we are downloading. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileHandler_1babaad8e64d86e9e9591e3ee30f7086d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classBT2_1_1PartialAlgorithm" kindref="compound">PartialAlgorithm</ref> &amp;</type>
+        <definition>PartialAlgorithm&amp; BT2::FileHandler::getAlgorithm</definition>
+        <argsstring>()</argsstring>
+        <name>getAlgorithm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the internal Algorithm for the file we are downloading. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileHandler_1121d60f8a6260f0cb75d1db9286b1a54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classBT2_1_1Chunk" kindref="compound">Chunk</ref></type>
+        <definition>Chunk BT2::FileHandler::getChunk</definition>
+        <argsstring>()</argsstring>
+        <name>getChunk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a chunk from the underlying file.</para><para><simplesect kind="return"><para>the chunk </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileHandler_17792d8c126f0b418863ff36ac787c3c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BT2::FileHandler::putChunk</definition>
+        <argsstring>(const Chunk &amp;c)</argsstring>
+        <name>putChunk</name>
+        <param>
+          <type>const <ref refid="classBT2_1_1Chunk" kindref="compound">Chunk</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inserts the given chunk into the underlying file. This function automatically wraps up the file if it is done downloading, but it is necessary to check for isEndgame and isDone to acquire the status manually.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the chunk to insert </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the chunk contained usefull data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileHandler_17d412144e0c2cde9e17572424486edc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BT2::FileHandler::isEndGame</definition>
+        <argsstring>()</argsstring>
+        <name>isEndGame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns whether or not the download is in endgame mode or not. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classBT2_1_1FileHandler_1ea49a7edd3a147d4696a5c5074283216" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BT2::FileHandler::isDone</definition>
+        <argsstring>()</argsstring>
+        <name>isDone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns whether or not the download is done or not. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" line="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class manages a single file from end to end, exposing only the simplest and required interface for operating. It encapsulates the file object handling, algorithm and state, and reveals only the function that may interest a higher-order download management system. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>BT2::FileObject</label>
+        <link refid="classBT2_1_1FileObject"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>m_metadata</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>m_metafile</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>BT2::FileHandler</label>
+        <link refid="classBT2_1_1FileHandler"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>m_fileobject</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>m_algorithm</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>BT2::PartialAlgorithm</label>
+        <link refid="classBT2_1_1PartialAlgorithm"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>m_file</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>BT2::MetaFile</label>
+        <link refid="classBT2_1_1MetaFile"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>m_metadata</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>BT2::MetaData</label>
+        <link refid="structBT2_1_1MetaData"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>EMPTY_FUNCTIONAL</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>BT2::BitVector</label>
+        <link refid="classBT2_1_1BitVector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" line="22" bodyfile="/home/nadir/Work/bp2p/current/src/betterp2p/control/FileHandler.h" bodystart="22" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classBT2_1_1FileHandler_1dfec7869adf832779520170672879fa7" prot="public" virt="non-virtual"><scope>BT2::FileHandler</scope><name>FileHandler</name></member>
+      <member refid="classBT2_1_1FileHandler_10eeaef80a0045fe113f6dd773dfd6305" prot="public" virt="non-virtual"><scope>BT2::FileHandler</scope><name>FileHandler</name></member>
+      <member refid="classBT2_1_1FileHandler_1babaad8e64d86e9e9591e3ee30f7086d" prot="public" virt="non-virtual"><scope>BT2::FileHandler</scope><name>getAlgorithm</name></member>
+      <member refid="classBT2_1_1FileHandler_1121d60f8a6260f0cb75d1db9286b1a54" prot="public" virt="non-virtual"><scope>BT2::FileHandler</scope><name>getChunk</name></member>
+      <member refid="classBT2_1_1FileHandler_129210045cc9b5662f594428456434152" prot="public" virt="non-virtual"><scope>BT2::FileHandler</scope><name>getFilename</name></member>
+      <member refid="classBT2_1_1FileHandler_1020e8c893abc916e887be50e5b554215" prot="public" virt="non-virtual"><scope>BT2::FileHandler</scope><name>getFileObject</name></member>
+      <member refid="classBT2_1_1FileHandler_1a4a07eeba504bf755869b2a8019d314a" prot="public" virt="non-virtual"><scope>BT2::FileHandler</scope><name>getMetaData</name></member>
+      <member refid="classBT2_1_1FileHandler_1f745554a4d01c950a0ab2b64ce3b3151" prot="public" virt="non-virtual"><scope>BT2::FileHandler</scope><name>getMetaData</name></member>
+      <member refid="classBT2_1_1FileHandler_1ea49a7edd3a147d4696a5c5074283216" prot="public" virt="non-virtual"><scope>BT2::FileHandler</scope><name>isDone</name></member>
+      <member refid="classBT2_1_1FileHandler_17d412144e0c2cde9e17572424486edc4" prot="public" virt="non-virtual"><scope>BT2::FileHandler</scope><name>isEndGame</name></member>
+      <member refid="classBT2_1_1FileHandler_1947506ad3ade2bd3364fb323541bd499" prot="private" virt="non-virtual"><scope>BT2::FileHandler</scope><name>m_algorithm</name></member>
+      <member refid="classBT2_1_1FileHandler_13e493acb5ee32d5615868f1794ddefbd" prot="private" virt="non-virtual"><scope>BT2::FileHandler</scope><name>m_fileobject</name></member>
+      <member refid="classBT2_1_1FileHandler_17792d8c126f0b418863ff36ac787c3c9" prot="public" virt="non-virtual"><scope>BT2::FileHandler</scope><name>putChunk</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

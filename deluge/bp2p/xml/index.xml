@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.5.8">
+  <compound refid="classBT2_1_1BitVector" kind="class"><name>BT2::BitVector</name>
+  </compound>
+  <compound refid="classBT2_1_1Chunk" kind="class"><name>BT2::Chunk</name>
+    <member refid="classBT2_1_1Chunk_10ee1f0f904a0136b5fbecd779bf09457" kind="variable"><name>m_data</name></member>
+    <member refid="classBT2_1_1Chunk_1c7a3f9c75c3076742d5f81da4f088535" kind="variable"><name>m_functional</name></member>
+    <member refid="classBT2_1_1Chunk_1e00a5524d9aa11fd1bffad6d8f9ca17c" kind="function"><name>Chunk</name></member>
+    <member refid="classBT2_1_1Chunk_1c3d597acf6a86c457851dfde9a643ecc" kind="function"><name>Chunk</name></member>
+    <member refid="classBT2_1_1Chunk_1b0e0c2c5244bff9cad811013a37a2470" kind="function"><name>operator^</name></member>
+    <member refid="classBT2_1_1Chunk_17062fab0e80bdde930f4b73738643c40" kind="function"><name>operator^=</name></member>
+    <member refid="classBT2_1_1Chunk_16345eb0976e4a9f0b89c4c92c0048b4c" kind="function"><name>getData</name></member>
+    <member refid="classBT2_1_1Chunk_142d5923f8cd545bf96c107a2ef677c47" kind="function"><name>getFunctional</name></member>
+    <member refid="classBT2_1_1Chunk_1ae675d7e467c8e14a6fbc1fed8e40d3d" kind="function"><name>getData</name></member>
+    <member refid="classBT2_1_1Chunk_14a01ee3f25bfc4039155c0c6a1a73402" kind="function"><name>getFunctional</name></member>
+  </compound>
+  <compound refid="classBT2_1_1FileHandler" kind="class"><name>BT2::FileHandler</name>
+    <member refid="classBT2_1_1FileHandler_13e493acb5ee32d5615868f1794ddefbd" kind="variable"><name>m_fileobject</name></member>
+    <member refid="classBT2_1_1FileHandler_1947506ad3ade2bd3364fb323541bd499" kind="variable"><name>m_algorithm</name></member>
+    <member refid="classBT2_1_1FileHandler_1dfec7869adf832779520170672879fa7" kind="function"><name>FileHandler</name></member>
+    <member refid="classBT2_1_1FileHandler_10eeaef80a0045fe113f6dd773dfd6305" kind="function"><name>FileHandler</name></member>
+    <member refid="classBT2_1_1FileHandler_1a4a07eeba504bf755869b2a8019d314a" kind="function"><name>getMetaData</name></member>
+    <member refid="classBT2_1_1FileHandler_1f745554a4d01c950a0ab2b64ce3b3151" kind="function"><name>getMetaData</name></member>
+    <member refid="classBT2_1_1FileHandler_129210045cc9b5662f594428456434152" kind="function"><name>getFilename</name></member>
+    <member refid="classBT2_1_1FileHandler_1020e8c893abc916e887be50e5b554215" kind="function"><name>getFileObject</name></member>
+    <member refid="classBT2_1_1FileHandler_1babaad8e64d86e9e9591e3ee30f7086d" kind="function"><name>getAlgorithm</name></member>
+    <member refid="classBT2_1_1FileHandler_1121d60f8a6260f0cb75d1db9286b1a54" kind="function"><name>getChunk</name></member>
+    <member refid="classBT2_1_1FileHandler_17792d8c126f0b418863ff36ac787c3c9" kind="function"><name>putChunk</name></member>
+    <member refid="classBT2_1_1FileHandler_17d412144e0c2cde9e17572424486edc4" kind="function"><name>isEndGame</name></member>
+    <member refid="classBT2_1_1FileHandler_1ea49a7edd3a147d4696a5c5074283216" kind="function"><name>isDone</name></member>
+  </compound>
+  <compound refid="classBT2_1_1FileObject" kind="class"><name>BT2::FileObject</name>
+    <member refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32" kind="enum"><name>FileState</name></member>
+    <member refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da3220a65e81e34fbfd3f7db36e4dde6b2f5" kind="enumvalue"><name>UNKNOWN</name></member>
+    <member refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32c7e001ad695242f973ce980fa67c17ab" kind="enumvalue"><name>NEW</name></member>
+    <member refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32d9e13bd211e5162c890b6ca3cae72d2f" kind="enumvalue"><name>INCOMPLETE</name></member>
+    <member refid="classBT2_1_1FileObject_12bfced05d4197a6cf6bdc2d68953da32531d09589e5a75c15dce61a6cdb643db" kind="enumvalue"><name>COMPLETE</name></member>
+    <member refid="classBT2_1_1FileObject_11976dee7be00195143dbc272bd103767" kind="variable"><name>m_files</name></member>
+    <member refid="classBT2_1_1FileObject_1a2b408e1c3988565910345a4a4d9c386" kind="variable"><name>m_metafile</name></member>
+    <member refid="classBT2_1_1FileObject_1068b30b6e52c069df475c0b0e10b118c" kind="variable"><name>m_metadata</name></member>
+    <member refid="classBT2_1_1FileObject_12717d4a64d866a467e8563108df8602b" kind="function"><name>FileObject</name></member>
+    <member refid="classBT2_1_1FileObject_1eafd805571a63797c6cd35e66e46b4e3" kind="function"><name>FileObject</name></member>
+    <member refid="classBT2_1_1FileObject_1973f2da7733b30f626233c9be35b4a88" kind="function"><name>~FileObject</name></member>
+    <member refid="classBT2_1_1FileObject_1c5c3bc22233f966b3988043c27ce1d1b" kind="function"><name>getMetaData</name></member>
+    <member refid="classBT2_1_1FileObject_1388c759ce8f4e0957de2f5f17a5deb59" kind="function"><name>getMetaData</name></member>
+    <member refid="classBT2_1_1FileObject_1e18391430e136f2248d121dbe07fdd23" kind="function"><name>getFunctionals</name></member>
+    <member refid="classBT2_1_1FileObject_1853382155fdf0e26b7843d089123b169" kind="function"><name>getFunctionalMatrix</name></member>
+    <member refid="classBT2_1_1FileObject_110e5a015eaf7742be3dbb1e5731dcfa7" kind="function"><name>getChunk</name></member>
+    <member refid="classBT2_1_1FileObject_142c3fd37b4c4f4ccf2a23401b1c3b3ad" kind="function"><name>getChunk</name></member>
+    <member refid="classBT2_1_1FileObject_141850ad8931b6ecda22d349a7ab59e66" kind="function"><name>getChunk</name></member>
+    <member refid="classBT2_1_1FileObject_1b3609144ee8cd6cb0308575e0650f2e7" kind="function"><name>putChunk</name></member>
+    <member refid="classBT2_1_1FileObject_158f4a42c08bbcdd027e062bc460f88c1" kind="function"><name>putCombinedChunks</name></member>
+    <member refid="classBT2_1_1FileObject_12faf855ac6a44320f198f4e3847d1c0d" kind="function"><name>putCombinedChunks</name></member>
+    <member refid="classBT2_1_1FileObject_1296e1832c804b0c8f30ab6766afa4d50" kind="function"><name>completeFiles</name></member>
+    <member refid="classBT2_1_1FileObject_11d4c3c278b86880cfe7b6881644d0b17" kind="function"><name>closeFiles</name></member>
+    <member refid="classBT2_1_1FileObject_1e6c329d739686ce622266bb2e126b722" kind="function"><name>reopenFiles</name></member>
+    <member refid="classBT2_1_1FileObject_113dd99921e3bea2452f1c56b7ede0dc5" kind="function"><name>persist</name></member>
+    <member refid="classBT2_1_1FileObject_1a126e142deecb872ee0d0a7b3d0ecd68" kind="function"><name>getFileSize</name></member>
+    <member refid="classBT2_1_1FileObject_13f5b290ae32fb8f5af3ab4a7e3076aff" kind="function"><name>getFilesSize</name></member>
+    <member refid="classBT2_1_1FileObject_196ae8b11a784b6da8c8dec58cc2797e4" kind="function"><name>initializeFiles</name></member>
+    <member refid="classBT2_1_1FileObject_16774e6986623d0fec06ecfbca1e03e48" kind="function"><name>initializeMetaData</name></member>
+    <member refid="classBT2_1_1FileObject_1cfcf9d2769c517a99e35b95216b7af50" kind="function"><name>replaceChunk</name></member>
+    <member refid="classBT2_1_1FileObject_13c76729c91fe32d01c4957011c79a83a" kind="function"><name>readChunkFromFiles</name></member>
+    <member refid="classBT2_1_1FileObject_1cd0444e315280629d46a3ff009367ef9" kind="function"><name>writeChunkToFiles</name></member>
+    <member refid="classBT2_1_1FileObject_1a240ba426f33be382a00ebf812652f15" kind="function"><name>createDefaultGeometry</name></member>
+    <member refid="classBT2_1_1FileObject_1c5f7624875ffe3306bb9bd567f65fd41" kind="function"><name>createIdentityMatrix</name></member>
+    <member refid="classBT2_1_1FileObject_11668cc1af55345609ec1072781b3c6c1" kind="function"><name>createEmptyMatrix</name></member>
+    <member refid="classBT2_1_1FileObject_1f7b40ea0cce761cbda54e349435b84bc" kind="function"><name>calculateFunctionalIndex</name></member>
+    <member refid="classBT2_1_1FileObject_1a6aeb187fbf9b3f6f006af6373e86f02" kind="function"><name>calculateFilesForIndex</name></member>
+    <member refid="classBT2_1_1FileObject_1fc2131afce2e8d29d9d432c22397e68a" kind="function"><name>funcs</name></member>
+  </compound>
+  <compound refid="structBT2_1_1MetaData" kind="struct"><name>BT2::MetaData</name>
+    <member refid="structBT2_1_1MetaData_1269588e235cd3905853e49aa4bf256f9" kind="typedef"><name>ChunkFunctionals</name></member>
+    <member refid="structBT2_1_1MetaData_111fec422b350c95c9abfd3e0f6ba9852" kind="variable"><name>EMPTY_FUNCTIONAL</name></member>
+    <member refid="structBT2_1_1MetaData_117298c60264f1c81b1d40415b0dd727e" kind="variable"><name>fileName</name></member>
+    <member refid="structBT2_1_1MetaData_1d7cc021a9dd4fc81e294085797010fa0" kind="variable"><name>diskFileName</name></member>
+    <member refid="structBT2_1_1MetaData_1ff28266152f7bd835778f3605de5c62d" kind="variable"><name>chunkSize</name></member>
+    <member refid="structBT2_1_1MetaData_16d3d2246bb1219c55676555cbd4e9549" kind="variable"><name>containedFiles</name></member>
+    <member refid="structBT2_1_1MetaData_165685e8789b6b6a7671aab1c6ee1cccf" kind="variable"><name>fileSize</name></member>
+    <member refid="structBT2_1_1MetaData_1022d3f5fb547f6f90f2068471d2f584f" kind="variable"><name>chunkFunctionals</name></member>
+    <member refid="structBT2_1_1MetaData_1f890e55b5cfbc3134e081cbba2902476" kind="variable"><name>METADATA_MAGIC</name></member>
+    <member refid="structBT2_1_1MetaData_1c98d07dd8f7b70e16ccb9a01abf56b9c" kind="friend"><name>boost::serialization::access</name></member>
+    <member refid="structBT2_1_1MetaData_12b2901553395723345c6c2f5681bb6c8" kind="function"><name>MetaData</name></member>
+    <member refid="structBT2_1_1MetaData_1d2d7c64b558701555fa5ccea3855608d" kind="function"><name>MetaData</name></member>
+    <member refid="structBT2_1_1MetaData_18b39af4a7b2b042b5f10fc0c0bda6e64" kind="function"><name>MetaData</name></member>
+    <member refid="structBT2_1_1MetaData_1e7bd7882d02fcae6ef64c7646b391530" kind="function"><name>MetaData</name></member>
+    <member refid="structBT2_1_1MetaData_105b7c25499a65d123185cb6e772b0d8d" kind="function"><name>isSingleFile</name></member>
+    <member refid="structBT2_1_1MetaData_1641f6839cee2da1ecc5906a359f2648c" kind="function"><name>getContainedFilePath</name></member>
+    <member refid="structBT2_1_1MetaData_1d950fec7d7f13d1de4292cfccf0b99ea" kind="function"><name>getFunctionals</name></member>
+    <member refid="structBT2_1_1MetaData_1d50068b8294a58c86e250454b99b6ecc" kind="function"><name>getMaxChunkCount</name></member>
+    <member refid="structBT2_1_1MetaData_18835f702f7544547501c8fde4dcff9af" kind="function"><name>getChunkCount</name></member>
+    <member refid="structBT2_1_1MetaData_11e38b2a5010e17ec9c1b3dbce27a2193" kind="function"><name>getCompletePieces</name></member>
+    <member refid="structBT2_1_1MetaData_18ce5ff1f988eac00fdc4c8a6856f49a9" kind="function"><name>isComplete</name></member>
+    <member refid="structBT2_1_1MetaData_13a4c471c882794a2a047ffa6446ae499" kind="function"><name>dump</name></member>
+    <member refid="structBT2_1_1MetaData_1824a841dccfa6f611ab7b034338e7e0b" kind="function"><name>save</name></member>
+    <member refid="structBT2_1_1MetaData_1ae46c12865801cbf6ab9d30efcd01b78" kind="function"><name>load</name></member>
+    <member refid="structBT2_1_1MetaData_11f006b6c6abedafc1344bd9eae08904f" kind="function"><name>serialize</name></member>
+  </compound>
+  <compound refid="structBT2_1_1MetaData_1_1FileData" kind="struct"><name>BT2::MetaData::FileData</name>
+    <member refid="structBT2_1_1MetaData_1_1FileData_186c1de01b8f4ed2feaae21f70a2a5ef2" kind="variable"><name>path</name></member>
+    <member refid="structBT2_1_1MetaData_1_1FileData_158e1be5ad7a32b561d886d9872f95e3c" kind="variable"><name>offset</name></member>
+    <member refid="structBT2_1_1MetaData_1_1FileData_1cec372d6d0fd4102f634ba2a26b470f1" kind="variable"><name>size</name></member>
+    <member refid="structBT2_1_1MetaData_1_1FileData_19f4d8e56e814479a8bc9459da04a5348" kind="variable"><name>index</name></member>
+    <member refid="structBT2_1_1MetaData_1_1FileData_13cae53935ba141c9a885578c47fe16fd" kind="function"><name>FileData</name></member>
+  </compound>
+  <compound refid="classBT2_1_1MetaFile" kind="class"><name>BT2::MetaFile</name>
+    <member refid="classBT2_1_1MetaFile_1049c448b5397e9ac0abbc314360e6090" kind="variable"><name>m_metadata</name></member>
+    <member refid="classBT2_1_1MetaFile_1c6c1789e064ee3090c49fc4919a60094" kind="variable"><name>m_initialized</name></member>
+    <member refid="classBT2_1_1MetaFile_10de05b129abda6926a39b2474863dbcf" kind="variable"><name>m_metafile</name></member>
+    <member refid="classBT2_1_1MetaFile_16a980179310b8d11da5a57f3dfaab221" kind="variable"><name>METAFILE_SUFFIX</name></member>
+    <member refid="classBT2_1_1MetaFile_12f2a94931309e0300bb57f60d1e776cd" kind="variable"><name>METAFILE_DIRECTORY</name></member>
+    <member refid="classBT2_1_1MetaFile_17e2e8115681646a0ec82718c09a50d73" kind="function"><name>MetaFile</name></member>
+    <member refid="classBT2_1_1MetaFile_147e879177b4168b32468d3f457662a20" kind="function"><name>MetaFile</name></member>
+    <member refid="classBT2_1_1MetaFile_1ad79cf08bae8109c317b5f9aa347150f" kind="function"><name>MetaFile</name></member>
+    <member refid="classBT2_1_1MetaFile_18ce6affe7b3af94502604cbc972a0f9d" kind="function"><name>~MetaFile</name></member>
+    <member refid="classBT2_1_1MetaFile_10d9276f070ec8dba3e13055ca9b8e349" kind="function"><name>isInitialized</name></member>
+    <member refid="classBT2_1_1MetaFile_129080fed37b06245b76cf0722006c24a" kind="function"><name>getMetaData</name></member>
+    <member refid="classBT2_1_1MetaFile_1b5ae6d57ed0aebdde9464442e11560e6" kind="function"><name>getMetaData</name></member>
+    <member refid="classBT2_1_1MetaFile_14c040d0af7a473103ff92a146a91d9b6" kind="function"><name>getFileName</name></member>
+    <member refid="classBT2_1_1MetaFile_14b8a0921a5331fdfd3e52f2f4991d4d3" kind="function"><name>persist</name></member>
+    <member refid="classBT2_1_1MetaFile_16a8ce76c08cfe583522af715d3d21d32" kind="function"><name>checkMetaFileExists</name></member>
+    <member refid="classBT2_1_1MetaFile_1c25eea715405c3f8748abf60bcac9f6f" kind="function"><name>getMetaFilePathForFile</name></member>
+    <member refid="classBT2_1_1MetaFile_116e7fbf64988b1b5293ed45e258c9636" kind="function"><name>initialize</name></member>
+    <member refid="classBT2_1_1MetaFile_1190072fd8d04ee18a01a8f168c515d7c" kind="function"><name>performLoad</name></member>
+    <member refid="classBT2_1_1MetaFile_143ee5aa630e5db08723fadd0bc589897" kind="function"><name>performSave</name></member>
+  </compound>
+  <compound refid="classBT2_1_1PartialAlgorithm" kind="class"><name>BT2::PartialAlgorithm</name>
+    <member refid="classBT2_1_1PartialAlgorithm_178ba41074e3dd4078babee7159ff02e9" kind="variable"><name>END_GAME_CONSTANT</name></member>
+    <member refid="classBT2_1_1PartialAlgorithm_1b4c3cafa0e3dfc608d012587d83f68d2" kind="variable"><name>m_file</name></member>
+    <member refid="classBT2_1_1PartialAlgorithm_14fed11f4c5de074157f4da0934c635bf" kind="variable"><name>m_numGeneratedChunks</name></member>
+    <member refid="classBT2_1_1PartialAlgorithm_162daaff4e4e64fb396badfb7eabd10cb" kind="variable"><name>m_wasEliminated</name></member>
+    <member refid="classBT2_1_1PartialAlgorithm_1dad3f99897b3346117151d638fc09c00" kind="function"><name>PartialAlgorithm</name></member>
+    <member refid="classBT2_1_1PartialAlgorithm_173f54736acb26a25a5061b9645a6d113" kind="function"><name>~PartialAlgorithm</name></member>
+    <member refid="classBT2_1_1PartialAlgorithm_137c75717bab72f1c72ca74af04a68ddc" kind="function"><name>canAddFunctional</name></member>
+    <member refid="classBT2_1_1PartialAlgorithm_1beb276fa0fbe137e5602fe3477e86487" kind="function"><name>addChunk</name></member>
+    <member refid="classBT2_1_1PartialAlgorithm_10de3ec2e958b64391161cad43c7c2b24" kind="function"><name>isEndGame</name></member>
+    <member refid="classBT2_1_1PartialAlgorithm_147bfd5c5e145e86085c24ac8db6069f8" kind="function"><name>getChunk</name></member>
+    <member refid="classBT2_1_1PartialAlgorithm_1474ca85385572d6505064798e5d91aa9" kind="function"><name>isDone</name></member>
+    <member refid="classBT2_1_1PartialAlgorithm_143f2022fca25eca19e75aa7ba0acd4fb" kind="function"><name>wrapUp</name></member>
+    <member refid="classBT2_1_1PartialAlgorithm_1f6d3fc57087700b6ae405a1ac0fe6bb7" kind="function"><name>semiReduce</name></member>
+    <member refid="classBT2_1_1PartialAlgorithm_10f455cc5287f57f150b2a052041d6de6" kind="function"><name>isUpperTriangular</name></member>
+    <member refid="classBT2_1_1PartialAlgorithm_16ea0dcfc3f29683087d0347a2e297b3a" kind="function"><name>isIdentityMatrix</name></member>
+    <member refid="classBT2_1_1PartialAlgorithm_10f15cd6a6bba982b75a6bcfc9e1398ba" kind="function"><name>gaussElimination</name></member>
+  </compound>
+  <compound refid="namespaceboost" kind="namespace"><name>boost</name>
+    <member refid="namespaceboost_1f208259cc0458fe578f0e172662c6247" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="namespaceboost_1_1serialization" kind="namespace"><name>boost::serialization</name>
+    <member refid="namespaceboost_1_1serialization_166b9c2644e3181f2d2065d985eb792d6" kind="function"><name>save</name></member>
+    <member refid="namespaceboost_1_1serialization_1db2d23219390759d559d9eeab3bc9100" kind="function"><name>load</name></member>
+    <member refid="namespaceboost_1_1serialization_151dae346a1b15a777f49f365fe93c065" kind="function"><name>serialize</name></member>
+    <member refid="namespaceboost_1_1serialization_1311c699f0e0348991ee36978f7070264" kind="function"><name>save</name></member>
+    <member refid="namespaceboost_1_1serialization_12c8520eb09f488e8d87401bdec9b778e" kind="function"><name>load</name></member>
+    <member refid="namespaceboost_1_1serialization_14d6f3b604885b5ee3fecbdeb526eeac4" kind="function"><name>serialize</name></member>
+  </compound>
+  <compound refid="namespaceBT2" kind="namespace"><name>BT2</name>
+    <member refid="namespaceBT2_1ec25942d9d92338be4fb202ca194a966" kind="function"><name>bitvector_from_string</name></member>
+    <member refid="namespaceBT2_19fd2fcf7e644c2139520255384484efe" kind="function"><name>bitvector_to_string</name></member>
+  </compound>
+  <compound refid="PartialAlgorithm_8h" kind="file"><name>PartialAlgorithm.h</name>
+  </compound>
+  <compound refid="BitVector_8h" kind="file"><name>BitVector.h</name>
+  </compound>
+  <compound refid="MetaData_8h" kind="file"><name>MetaData.h</name>
+  </compound>
+  <compound refid="FileHandler_8h" kind="file"><name>FileHandler.h</name>
+  </compound>
+  <compound refid="Chunk_8h" kind="file"><name>Chunk.h</name>
+  </compound>
+  <compound refid="FileObject_8h" kind="file"><name>FileObject.h</name>
+  </compound>
+  <compound refid="MetaFile_8h" kind="file"><name>MetaFile.h</name>
+  </compound>
+  <compound refid="dir_ccea444f360564d5ccb27c4a79e9bc6a" kind="dir"><name>src/betterp2p/algorithm/</name>
+  </compound>
+  <compound refid="dir_f567a271a729f05c17f0e1c8203f5721" kind="dir"><name>src/betterp2p/</name>
+  </compound>
+  <compound refid="dir_609a716f105b2041f70e8cab2dd71ce3" kind="dir"><name>src/betterp2p/common/</name>
+  </compound>
+  <compound refid="dir_9f198c819982a3866ef77728a226cbad" kind="dir"><name>src/betterp2p/control/</name>
+  </compound>
+  <compound refid="dir_3edde6238366504972cf40f3019bf4be" kind="dir"><name>src/betterp2p/filesystem/</name>
+  </compound>
+  <compound refid="dir_88a5b09ac0d4ce5eb91510181af782c7" kind="dir"><name>src/</name>
+  </compound>
+</doxygenindex>

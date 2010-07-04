@@ -1,0 +1,3835 @@
+Last login: Sun Dec 21 01:53:08 on ttys003
+ely-porats-macbook:~ porately$ pwd
+/Users/porately
+ely-porats-macbook:~ porately$ ls
+Bp2pProj		Desktop			Documents		Downloads		Library			Movies			Music			Pictures		Public			Send Registration	Sites			inst			trunk			usr			work
+ely-porats-macbook:~ porately$ cd D
+Desktop/   Documents/ Downloads/ 
+ely-porats-macbook:~ porately$ cd D
+Desktop/   Documents/ Downloads/ 
+ely-porats-macbook:~ porately$ cd D
+Desktop/   Documents/ Downloads/ 
+ely-porats-macbook:~ porately$ cd Documents/
+ely-porats-macbook:Documents porately$ cd tar/
+ely-porats-macbook:tar porately$ cd workspace/
+ely-porats-macbook:workspace porately$ cd Original/
+ely-porats-macbook:Original porately$ ls
+BTL				MANIFEST.in			Zeroconf.py			bittorrent-tracker.py		credits.txt			khashmir			locale				po				setup.py			tt
+BitTorrent			PKG-INFO			Zeroconf.pyc			bittorrent.py			debian				language_codes.py		makei18n.sh			public.key			src				windows_installer
+INSTALL.unix.txt		README.txt			bittorrent-console.py		build_nix_pkg.sh		images				launchmany-console.py		maketorrent-console.py		redirdonate.html		test
+LICENSE.txt			TRACKERLESS.txt			bittorrent-curses.py		changetracker-console.py	install_nix.sh			launchmany-curses.py		maketorrent.py			setup.cfg			torrentinfo-console.py
+ely-porats-macbook:Original porately$ mkdit tt
+-bash: mkdit: command not found
+ely-porats-macbook:Original porately$ mkdir tt
+mkdir: tt: File exists
+ely-porats-macbook:Original porately$ cd tt
+ely-porats-macbook:tt porately$ ls
+111.txt.torrent
+ely-porats-macbook:tt porately$ pwd
+/Users/porately/Documents/tar/workspace/Original/tt
+ely-porats-macbook:tt porately$ ls
+111.txt.torrent
+ely-porats-macbook:tt porately$ pwd
+/Users/porately/Documents/tar/workspace/Original/tt
+ely-porats-macbook:tt porately$ python ../bittorrent-console.py 111.txt.torrent
+>>> unable to setrlimit  current limit exceeds maximum limit
+
+
+
+
+
+Log: none
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      initializing
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  ---
+upload rate:    ---
+share rating:   
+seed status:    
+peer status:    
+In Torrent.py
+In Torrent.py
+init Torrent
+in intit Torrent, make_id() M5-2-2--d1a944f96067
+Failed to read fastresume
+ <type 'exceptions.ValueError'>: No such file or directory: /Users/porately/Desktop/BitTorrent Downloads/111.txt
+   File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 180, in __init__
+    destination_path)
+
+   File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 218, in read_fastresume
+    return self._read_fastresume_v2(f, working_path, destination_path)
+
+   File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 329, in _read_fastresume_v2
+    raise ValueError("No such file or directory: %s" % filename)
+
+start download
+requester op begin
+_read_messages
+_read_messages
+_read_messages
+_read_messages
+send_handshake
+_read_messages
+send_handshake
+data_came_in
+data_came_in
+data_came_in
+data_came_in
+data_came_in
+sebd msg
+write....
+make upload
+sebd msg
+write....
+sebd msg
+write....
+in Download
+send_port
+sebd msg
+write....
+data_came_in
+_read_messages
+send_handshake
+data_came_in
+sebd msg
+write....
+make upload
+sebd msg
+write....
+sebd msg
+write....
+in Download
+send_port
+sebd msg
+write....
+_read_messages
+data_came_in
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+Download/send_request
+send_request
+sebd msg
+write....
+got msg
+data_came_in
+got msg
+get_piece
+sebd msg
+write....
+_got_piece
+send_have
+sebd msg
+write....
+stop download
+
+
+
+
+
+Log:
+[02:59:35]  <type 'exceptions.ValueError'>: No such file or directory: /Users/porately/Desktop/BitTorrent Downloads/111.txt
+[02:59:35]    File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 180, in __init__
+    destination_path)
+
+[02:59:35]    File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 218, in read_fastresume
+    return self._read_fastresume_v2(f, working_path, destination_path)
+
+[02:59:35]    File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 329, in _read_fastresume_v2
+    raise ValueError("No such file or directory: %s" % filename)
+
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    ---
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+start download
+requester op begin
+_read_messages
+Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+_read_messages
+send_handshake
+_read_messages
+Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+_read_messages
+send_handshake
+data_came_in
+data_came_in
+data_came_in
+data_came_in
+sebd msg
+write....
+make upload
+send_have all
+sebd msg
+write....
+sebd msg
+write....
+in Download
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+got msg
+_request_more
+got msg
+Discovery timed out
+NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+
+
+
+
+Log:
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:43] Discovery timed out
+[02:59:43] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:43] Discovery timed out
+[02:59:43] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:43] Discovery timed out
+[02:59:43] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:43] Discovery timed out
+[02:59:43] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:43] Discovery timed out
+[02:59:43] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:43] Discovery timed out
+[02:59:43] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:43] Discovery timed out
+[02:59:43] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:43] Discovery timed out
+[02:59:43] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:43] Discovery timed out
+[02:59:43] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+^Cshutdown.
+
+
+
+
+
+Log:
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+[02:59:43] Discovery timed out
+[02:59:43] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      shutting down
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+stop download
+In Torrent.py
+Problem connecting to tracker (http://192.168.2.102:6969/announce): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+ely-porats-macbook:tt porately$ pwd
+/Users/porately/Documents/tar/workspace/Original/tt
+ely-porats-macbook:tt porately$ python ../bittorrent-console.py 111.txt.torrent
+>>> unable to setrlimit  current limit exceeds maximum limit
+
+
+
+
+
+Log: none
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      initializing
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  ---
+upload rate:    ---
+share rating:   
+seed status:    
+peer status:    
+In Torrent.py
+In Torrent.py
+init Torrent
+in intit Torrent, make_id() M5-2-2--a55efda8742d
+Failed to read fastresume
+ <type 'exceptions.ValueError'>: No such file or directory: /Users/porately/Desktop/BitTorrent Downloads/111.txt
+   File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 180, in __init__
+    destination_path)
+
+   File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 218, in read_fastresume
+    return self._read_fastresume_v2(f, working_path, destination_path)
+
+   File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 329, in _read_fastresume_v2
+    raise ValueError("No such file or directory: %s" % filename)
+
+connectionManager init()
+start download
+ConnectionManagerdd_torrent
+Requester
+in Requester()
+requester op begin
+Problem connecting to tracker (http://192.168.2.102:6969/announce): Connection was refused by other side: 61: Connection refused.
+^Cshutdown.
+
+
+
+
+
+Log:
+[19:43:41]    File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 180, in __init__
+    destination_path)
+
+[19:43:41]    File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 218, in read_fastresume
+    return self._read_fastresume_v2(f, working_path, destination_path)
+
+[19:43:41]    File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 329, in _read_fastresume_v2
+    raise ValueError("No such file or directory: %s" % filename)
+
+[19:43:41] Problem connecting to tracker (http://192.168.2.102:6969/announce): Connection was refused by other side: 61: Connection refused.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      shutting down
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  ---
+upload rate:    ---
+share rating:   
+seed status:    
+peer status:    
+stop download
+In Torrent.py
+Problem connecting to tracker (http://192.168.2.102:6969/announce): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+ely-porats-macbook:tt porately$ pwd
+/Users/porately/Documents/tar/workspace/Original/tt
+ely-porats-macbook:tt porately$ ls
+111.txt.torrent
+ely-porats-macbook:tt porately$ python ../bittorrent-console.py 111.txt.torrent
+>>> unable to setrlimit  current limit exceeds maximum limit
+
+
+
+
+
+Log: none
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      initializing
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  ---
+upload rate:    ---
+share rating:   
+seed status:    
+peer status:    
+In Torrent.py
+In Torrent.py
+init Torrent
+in intit Torrent, make_id() M5-2-2--0e43a82bb89a
+connectionManager init()
+start download
+ConnectionManagerdd_torrent
+DHTREQUESTER
+in Requester()
+Requester
+in Requester()
+requester op begin
+
+
+
+
+
+Log: none
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+Discovery timed out
+NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+Tracker announce still not complete 59 seconds after starting it
+Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:06:52] Tracker announce still not complete 59 seconds after starting it
+[20:06:52] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:06:52] Tracker announce still not complete 59 seconds after starting it
+[20:06:52] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:06:52] Tracker announce still not complete 59 seconds after starting it
+[20:06:52] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:06:52] Tracker announce still not complete 59 seconds after starting it
+[20:06:52] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+^Cshutdown.
+
+
+
+
+
+Log:
+[20:05:59] Discovery timed out
+[20:05:59] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:06:52] Tracker announce still not complete 59 seconds after starting it
+[20:06:52] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      shutting down
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+stop download
+In Torrent.py
+Problem connecting to tracker (http://192.168.0.100:6969/announce): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+ely-porats-macbook:tt porately$ ls
+111.txt.torrent
+ely-porats-macbook:tt porately$ python ../bittorrent-console.py 111.txt.torrent
+>>> unable to setrlimit  current limit exceeds maximum limit
+
+
+
+
+
+Log: none
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      initializing
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  ---
+upload rate:    ---
+share rating:   
+seed status:    
+peer status:    
+In Torrent.py
+In Torrent.py
+init Torrent
+in intit Torrent, make_id() M5-2-2--c88299f300c4
+connectionManager init()
+start download
+ConnectionManagerdd_torrent
+DHTREQUESTER
+in Requester()
+Requester
+in Requester()
+requester op begin
+ConnectionManager\start_connection peerId:  None addres:  ('77.127.137.69', 6881)
+ConnectionManager\start_connection peerId:  None addres:  ('77.127.137.69', 6881)
+
+
+
+
+
+Log: none
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+Discovery timed out
+NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+Tracker announce still not complete 59 seconds after starting it
+Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+send keepalives
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+^Cshutdown.
+
+
+
+
+
+Log:
+[20:12:25] Discovery timed out
+[20:12:25] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[20:13:18] Tracker announce still not complete 59 seconds after starting it
+[20:13:18] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         111.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      shutting down
+download to:    /Users/porately/Desktop/BitTorrent Downloads/111.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+stop download
+In Torrent.py
+Problem connecting to tracker (http://192.168.0.100:6969/announce): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+Problem connecting to tracker (http://192.168.0.100:6969/announce): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+ely-porats-macbook:tt porately$ pwd
+/Users/porately/Documents/tar/workspace/Original/tt
+ely-porats-macbook:tt porately$ ls
+111.txt.torrent	222.txt.torrent
+ely-porats-macbook:tt porately$ python ../bittorrent-console.py 222.txt.torrent
+>>> unable to setrlimit  current limit exceeds maximum limit
+
+
+
+
+
+Log: none
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      initializing
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  ---
+upload rate:    ---
+share rating:   
+seed status:    
+peer status:    
+In Torrent.py
+In Torrent.py
+init Torrent
+in intit Torrent, make_id() M5-2-2--3bf12a5bd0c5
+connectionManager init()
+start download
+ConnectionManagerdd_torrent
+Requester
+in Requester()
+requester op begin
+
+
+
+
+
+Log: none
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+Discovery timed out
+NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+
+
+
+
+Log:
+[21:15:37] Discovery timed out
+[21:15:37] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:15:37] Discovery timed out
+[21:15:37] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:15:37] Discovery timed out
+[21:15:37] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:15:37] Discovery timed out
+[21:15:37] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:15:37] Discovery timed out
+[21:15:37] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:15:37] Discovery timed out
+[21:15:37] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:15:37] Discovery timed out
+[21:15:37] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:15:37] Discovery timed out
+[21:15:37] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:15:37] Discovery timed out
+[21:15:37] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:15:37] Discovery timed out
+[21:15:37] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+^Cshutdown.
+
+
+
+
+
+Log:
+[21:15:37] Discovery timed out
+[21:15:37] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      shutting down
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+stop download
+In Torrent.py
+Problem connecting to tracker (http://192.168.0.100:6969/announce): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+Problem connecting to tracker (http://192.168.0.100:6969/announce): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+ely-porats-macbook:tt porately$ ls
+111.txt.torrent	222.txt.torrent
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ ls
+111.txt.torrent	222.txt.torrent
+ely-porats-macbook:tt porately$ rm 222.txt.torrent 
+ely-porats-macbook:tt porately$ ls
+111.txt.torrent
+ely-porats-macbook:tt porately$ python ../bittorrent-console.py 222.txt.torrent
+>>> unable to setrlimit  current limit exceeds maximum limit
+
+
+
+
+
+Log: none
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      initializing
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  ---
+upload rate:    ---
+share rating:   
+seed status:    
+peer status:    
+In Torrent.py
+In Torrent.py
+init Torrent
+in intit Torrent, make_id() M5-2-2--9119ff6c7452
+connectionManager init()
+start download
+ConnectionManagerdd_torrent
+Requester
+in Requester()
+requester op begin
+
+
+
+
+
+Log: none
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+Discovery timed out
+NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+
+
+
+
+Log:
+[21:24:16] Discovery timed out
+[21:24:16] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:24:16] Discovery timed out
+[21:24:16] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:24:16] Discovery timed out
+[21:24:16] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:24:16] Discovery timed out
+[21:24:16] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:24:16] Discovery timed out
+[21:24:16] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:24:16] Discovery timed out
+[21:24:16] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:24:16] Discovery timed out
+[21:24:16] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:24:16] Discovery timed out
+[21:24:16] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:24:16] Discovery timed out
+[21:24:16] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:24:16] Discovery timed out
+[21:24:16] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+
+
+
+
+
+Log:
+[21:24:16] Discovery timed out
+[21:24:16] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+Tracker announce still not complete 59 seconds after starting it
+Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+
+
+
+
+Log:
+[21:24:16] Discovery timed out
+[21:24:16] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[21:25:09] Tracker announce still not complete 59 seconds after starting it
+[21:25:09] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+^Cshutdown.
+
+
+
+
+
+Log:
+[21:24:16] Discovery timed out
+[21:24:16] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+[21:25:09] Tracker announce still not complete 59 seconds after starting it
+[21:25:09] Problem connecting to tracker (http://192.168.0.100:6969/announce): Timeout while contacting server.
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      shutting down
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+stop download
+In Torrent.py
+Problem connecting to tracker (http://192.168.0.100:6969/announce): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ s
+-bash: s: command not found
+ely-porats-macbook:tt porately$ ls
+111.txt.torrent	222.txt.torrent
+ely-porats-macbook:tt porately$ rm 222.txt.torrent 
+ely-porats-macbook:tt porately$ ls
+111.txt.torrent
+ely-porats-macbook:tt porately$ ls
+111.txt.torrent	222.txt.torrent
+ely-porats-macbook:tt porately$ python ../bittorrent-console.py 222.txt.torrent
+>>> unable to setrlimit  current limit exceeds maximum limit
+
+
+
+
+
+Log: none
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      initializing
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  ---
+upload rate:    ---
+share rating:   
+seed status:    
+peer status:    
+In Torrent.py
+In Torrent.py
+init Torrent
+in intit Torrent, make_id() M5-2-2--ad780a234d16
+connectionManager init()
+start download
+ConnectionManagerdd_torrent
+Requester
+in Requester()
+requester op begin
+ConnectionManager\start_connection peerId:  None addres:  ('192.168.2.102', 6881)
+init Connector, its id:  None
+_read_messages
+data_came_in
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x175ddd0>
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--7639ac68e04d
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+Download/send_request
+send_request
+**********msg index =  0
+sebd msg
+write....
+got msg
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x17aed90>
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--7639ac68e04d
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+got msg
+
+
+
+
+
+Log: none
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    1 seen now
+peer status:    1 seen now
+Discovery timed out
+NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+data_came_in
+got msg
+_request_more
+Download/send_request
+send_request
+**********msg index =  0
+sebd msg
+write....
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x16daf90>
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--7639ac68e04d
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+got msg
+
+
+
+
+
+Log:
+[21:40:31] Discovery timed out
+[21:40:31] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    1 seen now
+peer status:    1 seen now
+data_came_in
+got msg
+_request_more
+Download/send_request
+send_request
+**********msg index =  0
+sebd msg
+write....
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x17ae810>
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--7639ac68e04d
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+got msg
+
+
+
+
+
+Log:
+[21:40:31] Discovery timed out
+[21:40:31] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    1 seen now
+peer status:    1 seen now
+data_came_in
+got msg
+_request_more
+Download/send_request
+send_request
+**********msg index =  0
+sebd msg
+write....
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x1866ff0>
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--7639ac68e04d
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+got msg
+
+
+
+
+
+Log:
+[21:40:31] Discovery timed out
+[21:40:31] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    1 seen now
+peer status:    1 seen now
+data_came_in
+got msg
+_request_more
+Download/send_request
+send_request
+**********msg index =  0
+sebd msg
+write....
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x17aedb0>
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--7639ac68e04d
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+got msg
+
+
+
+
+
+Log:
+[21:40:31] Discovery timed out
+[21:40:31] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    1 seen now
+peer status:    1 seen now
+data_came_in
+got msg
+_request_more
+Download/send_request
+send_request
+**********msg index =  0
+sebd msg
+write....
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x157d090>
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--7639ac68e04d
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+got msg
+
+
+
+
+
+Log:
+[21:40:31] Discovery timed out
+[21:40:31] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    1 seen now
+peer status:    1 seen now
+data_came_in
+got msg
+_request_more
+Download/send_request
+send_request
+**********msg index =  0
+sebd msg
+write....
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x1586b50>
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--7639ac68e04d
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+got msg
+
+
+
+
+
+Log:
+[21:40:31] Discovery timed out
+[21:40:31] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    1 seen now
+peer status:    1 seen now
+data_came_in
+got msg
+_request_more
+Download/send_request
+send_request
+**********msg index =  0
+sebd msg
+write....
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x1802470>
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--7639ac68e04d
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+got msg
+
+
+
+
+
+Log:
+[21:40:31] Discovery timed out
+[21:40:31] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    1 seen now
+peer status:    1 seen now
+data_came_in
+got msg
+_request_more
+Download/send_request
+send_request
+**********msg index =  0
+sebd msg
+write....
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x17c7c30>
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--7639ac68e04d
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+got msg
+
+
+
+
+
+Log:
+[21:40:31] Discovery timed out
+[21:40:31] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    1 seen now
+peer status:    1 seen now
+data_came_in
+got msg
+_request_more
+Download/send_request
+send_request
+**********msg index =  0
+sebd msg
+write....
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x1866df0>
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--7639ac68e04d
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+got msg
+
+
+
+
+
+Log:
+[21:40:31] Discovery timed out
+[21:40:31] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    1 seen now
+peer status:    1 seen now
+data_came_in
+got msg
+_request_more
+Download/send_request
+send_request
+**********msg index =  0
+sebd msg
+write....
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x1761430>
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--7639ac68e04d
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+got msg
+
+
+
+
+
+Log:
+[21:40:31] Discovery timed out
+[21:40:31] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    1 seen now
+peer status:    1 seen now
+data_came_in
+got msg
+_request_more
+Download/send_request
+send_request
+**********msg index =  0
+sebd msg
+write....
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x1866210>
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--7639ac68e04d
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+got msg
+
+
+
+
+
+Log:
+[21:40:31] Discovery timed out
+[21:40:31] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    1 seen now
+peer status:    1 seen now
+sebd msg
+write....
+data_came_in
+got msg
+_request_more
+Download/send_request
+send_request
+**********msg index =  0
+sebd msg
+write....
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x16dae50>
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--7639ac68e04d
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+got msg
+
+
+
+
+
+Log:
+[21:40:31] Discovery timed out
+[21:40:31] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      downloading
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    1 seen now
+peer status:    1 seen now
+data_came_in
+got msg
+_request_more
+Download/send_request
+send_request
+**********msg index =  0
+sebd msg
+write....
+^Cshutdown.
+
+
+
+
+
+Log:
+[21:40:31] Discovery timed out
+[21:40:31] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      shutting down
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   oo  (0.0 MB up / 0.0 MB down)
+seed status:    1 seen now
+peer status:    1 seen now
+stop download
+In Torrent.py
+Problem connecting to tracker (http://192.168.2.102:6969/announce): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+ely-porats-macbook:tt porately$ ls
+111.txt.torrent	222.txt.torrent
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ ls
+111.txt.torrent	222.txt.torrent
+ely-porats-macbook:tt porately$ python ../bittorrent-console.py 222.txt.torrent
+>>> unable to setrlimit  current limit exceeds maximum limit
+
+
+
+
+
+Log: none
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      initializing
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  ---
+upload rate:    ---
+share rating:   
+seed status:    
+peer status:    
+In Torrent.py
+In Torrent.py
+init Torrent
+in intit Torrent, make_id() M5-2-2--88da2fed1505
+connectionManager init()
+start download
+ConnectionManagerdd_torrent
+Requester
+in Requester()
+requester op begin
+ConnectionManager\start_connection peerId:  None addres:  ('192.168.2.102', 6881)
+init Connector, its id:  None
+_read_messages
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x1731cb0>
+data_came_in
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--681405802e1a
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+Download/send_request
+send_request
+msg index = chage the code here - add getChunk()
+sebd msg
+write....
+got msg
+data_came_in
+got msg
+get_piece
+sebd msg
+write....
+StorageWrapper\_storage_write()
+StorageWrapper\_storage_read()
+_got_piece
+send_have
+sebd msg
+write....
+stop download
+ConnectionManager\start_connection peerId:  None addres:  ('192.168.2.102', 6881)
+ConnectionManager\start_connection peerId:  None addres:  ('192.168.2.106', 6881)
+start download
+ConnectionManagerdd_torrent
+Requester
+in Requester()
+requester op begin
+init Connector, its id:  None
+_read_messages
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x177a6d0>
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x177aed0>
+data_came_in
+data_came_in
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--681405802e1a
+make upload
+init Upload()
+send_have all
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+ConnectionManager\start_connection peerId:  None addres:  ('192.168.2.102', 6881)
+init Connector, its id:  None
+_read_messages
+data_came_in
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+got msg
+_request_more
+got msg
+Unhandled error in Deferred:
+Traceback (most recent call last):
+  File "/Users/porately/Documents/tar/workspace/Original/BTL/HostIP.py", line 37, in connectionMade
+    _got_result(self.transport.getHost().host)
+  File "/Users/porately/Documents/tar/workspace/Original/BTL/HostIP.py", line 90, in _got_result
+    df.callback(_host_ip)
+  File "/opt/local/lib/python2.5/site-packages/twisted/internet/defer.py", line 242, in callback
+    self._startRunCallbacks(result)
+  File "/opt/local/lib/python2.5/site-packages/twisted/internet/defer.py", line 307, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/opt/local/lib/python2.5/site-packages/twisted/internet/defer.py", line 323, in _runCallbacks
+    self.result = callback(self.result, *args, **kw)
+  File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/LocalDiscovery.py", line 70, in _announce2
+    self.server.registerService(service)
+  File "/Users/porately/Documents/tar/workspace/Original/Zeroconf.py", line 1347, in registerService
+    self.checkService(info)
+  File "/Users/porately/Documents/tar/workspace/Original/Zeroconf.py", line 1426, in checkService
+    raise NonUniqueNameException
+Zeroconf.NonUniqueNameException: 
+
+
+
+
+
+Log:
+[21:56:24]     self.checkService(info)
+[21:56:24]   File "/Users/porately/Documents/tar/workspace/Original/Zeroconf.py", line 1426, in checkService
+[21:56:24]     raise NonUniqueNameException
+[21:56:24] Zeroconf.NonUniqueNameException: 
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+Discovery timed out
+NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+
+
+
+
+Log:
+[21:56:24]     raise NonUniqueNameException
+[21:56:24] Zeroconf.NonUniqueNameException: 
+[21:56:30] Discovery timed out
+[21:56:30] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+^Cshutdown.
+
+
+
+
+
+Log:
+[21:56:24]     raise NonUniqueNameException
+[21:56:24] Zeroconf.NonUniqueNameException: 
+[21:56:30] Discovery timed out
+[21:56:30] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      shutting down
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+stop download
+In Torrent.py
+Problem connecting to tracker (http://192.168.2.102:6969/announce): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ ls
+111.txt.torrent	222.txt.torrent
+ely-porats-macbook:tt porately$ python ../bittorrent-console.py 222.txt.torrent
+>>> unable to setrlimit  current limit exceeds maximum limit
+
+
+
+
+
+Log: none
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      initializing
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  ---
+upload rate:    ---
+share rating:   
+seed status:    
+peer status:    
+In Torrent.py
+In Torrent.py
+init Torrent
+in intit Torrent, make_id() M5-2-2--7a0cd81bbd93
+Failed to read fastresume
+ <type 'exceptions.ValueError'>: No such file or directory: /Users/porately/Desktop/BitTorrent Downloads/222.txt
+   File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 180, in __init__
+    destination_path)
+
+   File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 218, in read_fastresume
+    return self._read_fastresume_v2(f, working_path, destination_path)
+
+   File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 329, in _read_fastresume_v2
+    raise ValueError("No such file or directory: %s" % filename)
+
+init Connector, its id:  None
+_read_messages
+data_came_in
+init Connector, its id:  None
+_read_messages
+data_came_in
+data_came_in
+init Connector, its id:  None
+_read_messages
+data_came_in
+data_came_in
+init Connector, its id:  None
+_read_messages
+data_came_in
+data_came_in
+connectionManager init()
+start download
+ConnectionManagerdd_torrent
+Requester
+in Requester()
+requester op begin
+ConnectionManager\start_connection peerId:  None addres:  ('192.168.2.102', 6881)
+ConnectionManager\start_connection peerId:  None addres:  ('192.168.2.106', 6881)
+init Connector, its id:  None
+_read_messages
+init Connector, its id:  None
+_read_messages
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x1753d70>
+data_came_in
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x1755350>
+init Connector, its id:  None
+_read_messages
+data_came_in
+data_came_in
+data_came_in
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--469c23179647
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+Download/send_request
+send_request
+msg index = chage the code here - add getChunk()
+sebd msg
+write....
+got msg
+data_came_in
+data_came_in
+got msg
+get_piece
+sebd msg
+write....
+StorageWrapper\_storage_write()
+StorageWrapper\_storage_read()
+_got_piece
+send_have
+sebd msg
+write....
+stop download
+start download
+ConnectionManagerdd_torrent
+Requester
+in Requester()
+requester op begin
+ConnectionManager\start_connection peerId:  None addres:  ('192.168.2.102', 6881)
+ConnectionManager\start_connection peerId:  None addres:  ('192.168.2.106', 6881)
+init Connector, its id:  None
+_read_messages
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x17aecd0>
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x1753eb0>
+data_came_in
+data_came_in
+ConnectionManager\start_connection peerId:  None addres:  ('192.168.2.102', 6881)
+ConnectionManager\start_connection peerId:  None addres:  ('192.168.2.106', 6881)
+init Connector, its id:  None
+_read_messages
+init Connector, its id:  None
+_read_messages
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x17aef50>
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--469c23179647
+make upload
+init Upload()
+send_have all
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+data_came_in
+data_came_in
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+got msg
+_request_more
+got msg
+Unhandled error in Deferred:
+Traceback (most recent call last):
+  File "/Users/porately/Documents/tar/workspace/Original/BTL/HostIP.py", line 37, in connectionMade
+    _got_result(self.transport.getHost().host)
+  File "/Users/porately/Documents/tar/workspace/Original/BTL/HostIP.py", line 90, in _got_result
+    df.callback(_host_ip)
+  File "/opt/local/lib/python2.5/site-packages/twisted/internet/defer.py", line 242, in callback
+    self._startRunCallbacks(result)
+  File "/opt/local/lib/python2.5/site-packages/twisted/internet/defer.py", line 307, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/opt/local/lib/python2.5/site-packages/twisted/internet/defer.py", line 323, in _runCallbacks
+    self.result = callback(self.result, *args, **kw)
+  File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/LocalDiscovery.py", line 70, in _announce2
+    self.server.registerService(service)
+  File "/Users/porately/Documents/tar/workspace/Original/Zeroconf.py", line 1347, in registerService
+    self.checkService(info)
+  File "/Users/porately/Documents/tar/workspace/Original/Zeroconf.py", line 1426, in checkService
+    raise NonUniqueNameException
+Zeroconf.NonUniqueNameException: 
+
+
+
+
+
+Log:
+[22:09:09]     self.checkService(info)
+[22:09:09]   File "/Users/porately/Documents/tar/workspace/Original/Zeroconf.py", line 1426, in checkService
+[22:09:09]     raise NonUniqueNameException
+[22:09:09] Zeroconf.NonUniqueNameException: 
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+Discovery timed out
+NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+
+
+
+
+Log:
+[22:09:09]     raise NonUniqueNameException
+[22:09:09] Zeroconf.NonUniqueNameException: 
+[22:09:15] Discovery timed out
+[22:09:15] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+^Cshutdown.
+
+
+
+
+
+Log:
+[22:09:09]     raise NonUniqueNameException
+[22:09:09] Zeroconf.NonUniqueNameException: 
+[22:09:15] Discovery timed out
+[22:09:15] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      shutting down
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+stop download
+In Torrent.py
+Problem connecting to tracker (http://192.168.2.102:6969/announce): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ 
+ely-porats-macbook:tt porately$ python ../bittorrent-console.py 222.txt.torrent
+>>> unable to setrlimit  current limit exceeds maximum limit
+
+
+
+
+
+Log: none
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      initializing
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  ---
+upload rate:    ---
+share rating:   
+seed status:    
+peer status:    
+In Torrent.py
+In Torrent.py
+init Torrent
+in intit Torrent, make_id() M5-2-2--4e86a78af7f7
+RequestManager\__init()__
+Failed to read fastresume
+ <type 'exceptions.ValueError'>: No such file or directory: /Users/porately/Desktop/BitTorrent Downloads/222.txt
+   File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 180, in __init__
+    destination_path)
+
+   File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 218, in read_fastresume
+    return self._read_fastresume_v2(f, working_path, destination_path)
+
+   File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/StorageWrapper.py", line 329, in _read_fastresume_v2
+    raise ValueError("No such file or directory: %s" % filename)
+
+init Connector, its id:  None
+_read_messages
+data_came_in
+init Connector, its id:  None
+_read_messages
+data_came_in
+data_came_in
+init Connector, its id:  None
+_read_messages
+data_came_in
+data_came_in
+init Connector, its id:  None
+_read_messages
+data_came_in
+data_came_in
+connectionManager init()
+start download
+ConnectionManagerdd_torrent
+Requester
+in Requester()
+requester op begin
+ConnectionManager\start_connection peerId:  None addres:  ('192.168.2.102', 6881)
+ConnectionManager\start_connection peerId:  None addres:  ('192.168.2.106', 6881)
+init Connector, its id:  None
+_read_messages
+init Connector, its id:  None
+_read_messages
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x1589c50>
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x1744830>
+data_came_in
+init Connector, its id:  None
+_read_messages
+data_came_in
+data_came_in
+data_came_in
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--19d00d045df1
+make upload
+init Upload()
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+data_came_in
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+send_intrested
+sebd msg
+write....
+got msg
+_request_more
+RequestManager\want_requests, index:  0
+RequestManager
+ew_request
+Download/send_request
+send_request
+msg index = chage the code here - add getChunk()
+sebd msg
+write....
+RequestManager\want_requests, index:  0
+got msg
+data_came_in
+data_came_in
+got msg
+get_piece
+sebd msg
+write....
+StorageWrapper\_storage_write()
+RequestManager\want_requests, index:  0
+StorageWrapper\_storage_read()
+_got_piece
+send_have
+sebd msg
+write....
+stop download
+start download
+ConnectionManagerdd_torrent
+Requester
+in Requester()
+requester op begin
+ConnectionManager\start_connection peerId:  None addres:  ('192.168.2.102', 6881)
+ConnectionManager\start_connection peerId:  None addres:  ('192.168.2.106', 6881)
+Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+init Connector, its id:  None
+_read_messages
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x1589d10>
+init Connector, its id:  None
+_read_messages
+send_handshake <BitTorrent.Connector.Connector object at 0x17aa470>
+data_came_in
+data_came_in
+data_came_in
+sebd msg
+write....
+ConnectionManager\connection_handshake_completed
+connector (ip,id) =  192.168.2.102 M5-2-2--19d00d045df1
+make upload
+init Upload()
+send_have all
+sebd msg
+write....
+sebd msg
+write....
+in Download
+ConnectionManager: upload and download was created
+send_port
+sebd msg
+write....
+init Connector, its id:  None
+_read_messages
+Problem connecting to tracker (http://192.168.2.102:6969/announce): 200 OK
+data_came_in
+data_came_in
+got msg
+_got_utorrent_msg  
+got msg
+got msg
+_request_more
+got msg
+Unhandled error in Deferred:
+Traceback (most recent call last):
+  File "/Users/porately/Documents/tar/workspace/Original/BTL/HostIP.py", line 37, in connectionMade
+    _got_result(self.transport.getHost().host)
+  File "/Users/porately/Documents/tar/workspace/Original/BTL/HostIP.py", line 90, in _got_result
+    df.callback(_host_ip)
+  File "/opt/local/lib/python2.5/site-packages/twisted/internet/defer.py", line 242, in callback
+    self._startRunCallbacks(result)
+  File "/opt/local/lib/python2.5/site-packages/twisted/internet/defer.py", line 307, in _startRunCallbacks
+    self._runCallbacks()
+--- <exception caught here> ---
+  File "/opt/local/lib/python2.5/site-packages/twisted/internet/defer.py", line 323, in _runCallbacks
+    self.result = callback(self.result, *args, **kw)
+  File "/Users/porately/Documents/tar/workspace/Original/BitTorrent/LocalDiscovery.py", line 70, in _announce2
+    self.server.registerService(service)
+  File "/Users/porately/Documents/tar/workspace/Original/Zeroconf.py", line 1347, in registerService
+    self.checkService(info)
+  File "/Users/porately/Documents/tar/workspace/Original/Zeroconf.py", line 1426, in checkService
+    raise NonUniqueNameException
+Zeroconf.NonUniqueNameException: 
+
+
+
+
+
+Log:
+[22:37:29]     self.checkService(info)
+[22:37:29]   File "/Users/porately/Documents/tar/workspace/Original/Zeroconf.py", line 1426, in checkService
+[22:37:29]     raise NonUniqueNameException
+[22:37:29] Zeroconf.NonUniqueNameException: 
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+Discovery timed out
+NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+
+
+
+
+Log:
+[22:37:29]     raise NonUniqueNameException
+[22:37:29] Zeroconf.NonUniqueNameException: 
+[22:37:35] Discovery timed out
+[22:37:35] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   100.0
+time left:      seeding
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+^Cshutdown.
+
+
+
+
+
+Log:
+[22:37:29]     raise NonUniqueNameException
+[22:37:29] Zeroconf.NonUniqueNameException: 
+[22:37:35] Discovery timed out
+[22:37:35] NAT Traversal warning (Darwin: Unable to detect any UPnP services).
+
+saving:         222.txt
+file size:      1,089 (1.1 KB)
+percent done:   0.0
+time left:      shutting down
+download to:    /Users/porately/Desktop/BitTorrent Downloads/222.txt
+download rate:  0.0 KB/s
+upload rate:    0.0 KB/s
+share rating:   0.000  (0.0 MB up / 0.0 MB down)
+seed status:    0 seen now
+peer status:    0 seen now
+stop download
+In Torrent.py
+Problem connecting to tracker (http://192.168.2.102:6969/announce): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+ely-porats-macbook:tt porately$ python ../bittorrent-console.py 222.txt.torrent

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.8">
+  <compounddef id="dir_609a716f105b2041f70e8cab2dd71ce3" kind="dir">
+    <compoundname>src/betterp2p/common/</compoundname>
+    <innerfile refid="BitVector_8h">BitVector.h</innerfile>
+    <innerfile refid="MetaData_8h">MetaData.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nadir/Work/bp2p/current/src/betterp2p/common/"/>
+  </compounddef>
+</doxygen>
