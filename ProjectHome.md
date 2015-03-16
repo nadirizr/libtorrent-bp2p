@@ -1,0 +1,1 @@
+This project implements a different underlying filesystem and protocol for libtorrent clients, to attempt to make a more efficient client.
